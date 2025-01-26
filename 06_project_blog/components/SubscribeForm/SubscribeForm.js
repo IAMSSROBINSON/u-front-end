@@ -3,7 +3,7 @@ function SubscribeForm () {
     form.classList.add("subscribe-form");
     form.setAttribute("method", "#");
     form.setAttribute("action", "#");
-    form.setAttribute("novalidate", "");
+    // form.setAttribute("novalidate", "");
 
     const label = document.createElement("label");
     label.classList.add("email-label", "label");
@@ -15,6 +15,7 @@ function SubscribeForm () {
 
     const emailInput = document.createElement("input");
     emailInput.classList.add("email-input");
+    emailInput.setAttribute("required", "");
     emailInput.setAttribute("type", "email");
     emailInput.setAttribute("name", "email");
     emailInput.setAttribute("id", "emailInput");
