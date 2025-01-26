@@ -2,11 +2,26 @@
     font-size: 62.5%;
 
     /* VARIABLES */
-    --default-text-color: #343a40;
+
+    /* COLORS */
+    --default-text-color: hsl(210, 10%, 23%);
+    --accent-color-hue: 61;
+    --accent-color-saturation: 100%;
+    --accent-color-lightness: 80%;
+    --accent-color-lightness-hover: 70%;
+
+    --accent-color: hsl(var(--accent-color-hue), var(--accent-color-saturation), var(--accent-color-lightness));
+
+    --accent-color-hover: hsl(var(--accent-color-hue), var(--accent-color-saturation), var(--accent-color-lightness-hover));
+
 
 
     /* FONT SIZES */
     --label-font-size: 12px;
+
+
+    /* BORDER RADIUS */
+    --border-radius: 4px;
 }
 
 *,

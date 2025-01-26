@@ -7,15 +7,19 @@
     display: inline-block;
     color: inherit;
     margin-bottom: 4px;
+
+    @media screen and (min-width: 540px) {
+        display: none;
+    }
 }
 
 .input-and-button-container {
     background-color: yellow;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(220px, 1fr) auto;
     grid-template-rows: auto;
     outline: 1px solid var(--default-text-color);
-    /* outline: 1px solid red; */
+    border-radius: var(--border-radius);
 }
 
 .email-input, .submit-button {
@@ -26,4 +30,10 @@
 
 .submit-button {
     border-left: 1px solid var(--default-text-color);
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+
+.submit-button:hover {
+    background-color: var(--accent-color-hover);
 }
