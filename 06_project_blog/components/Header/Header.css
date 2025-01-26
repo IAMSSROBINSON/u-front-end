@@ -3,3 +3,9 @@
     width: 100%;
     background-color: #f8f9fa;
 }
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

@@ -1,5 +1,8 @@
 :root {
     font-size: 62.5%;
+
+    /* Variables */
+    --default-text-color: #343a40;
 }
 
 *,
@@ -18,6 +21,7 @@ html {
     height: 100%;
     line-height: 1.5;
     font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--default-text-color);
 }
 
 body {
@@ -40,6 +44,6 @@ img {
 /* .wrapper-constraint class added to wrappers of each section to constrain the max-width, this will be replaced with auto for the central column when creating the main grid layout */
 .wrapper-constraint {
     max-width: 736px;
-    background-color: tomato;
+    /* background-color: tomato; */
     margin: 0 auto;
 }
