@@ -6,7 +6,7 @@ function Logo () {
     a.classList.add("logotype");
     a.setAttribute("href", "index.html");
     a.setAttribute("rel", "noopener noreferrer");
-    a.textContent = "ssrobinson";
+    a.textContent = "iamssrobinson";
 
     container.appendChild(a);
 
