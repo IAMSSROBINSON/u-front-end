@@ -1,5 +1,5 @@
 .header-container {
-    height: 88px;
+    height: auto;
     width: 100%;
     background-color: #f8f9fa;
 }
@@ -9,3 +9,4 @@
     flex-direction: column;
     gap: 24px;
 }
+

@@ -1,0 +1,29 @@
+
+.email-label {
+    font-size: var(--label-font-size);
+}
+
+.email-label {
+    display: inline-block;
+    color: inherit;
+    margin-bottom: 4px;
+}
+
+.input-and-button-container {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    outline: 1px solid var(--default-text-color);
+    /* outline: 1px solid red; */
+}
+
+.email-input, .submit-button {
+    border: none;
+    padding: 0.8rem 1.6rem;
+
+}
+
+.submit-button {
+    border-left: 1px solid var(--default-text-color);
+}

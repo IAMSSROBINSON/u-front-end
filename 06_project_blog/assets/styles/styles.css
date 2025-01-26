@@ -1,8 +1,12 @@
 :root {
     font-size: 62.5%;
 
-    /* Variables */
+    /* VARIABLES */
     --default-text-color: #343a40;
+
+
+    /* FONT SIZES */
+    --label-font-size: 12px;
 }
 
 *,

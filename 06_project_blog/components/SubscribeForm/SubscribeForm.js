@@ -6,7 +6,7 @@ function SubscribeForm () {
     form.setAttribute("novalidate", "");
 
     const label = document.createElement("label");
-    label.classList.add("label");
+    label.classList.add("email-label", "label");
     label.setAttribute("for", "emailInput");
     label.textContent = "Subscribe to stay updated";
 
@@ -15,6 +15,8 @@ function SubscribeForm () {
 
     const emailInput = document.createElement("input");
     emailInput.classList.add("email-input");
+    emailInput.setAttribute("type", "email");
+    emailInput.setAttribute("name", "email");
     emailInput.setAttribute("id", "emailInput");
     emailInput.setAttribute("placeholder", "myEmail@example.com");
 
