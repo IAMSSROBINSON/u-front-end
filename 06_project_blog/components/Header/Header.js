@@ -4,6 +4,7 @@ function Header () {
 
     const wrapper = document.createElement("div");
     wrapper.classList.add("header-wrapper");
+    wrapper.classList.add("wrapper-constraint");
 
     container.appendChild(wrapper);
     return container;

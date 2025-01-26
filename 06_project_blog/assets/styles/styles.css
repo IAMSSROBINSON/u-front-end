@@ -31,3 +31,9 @@ img {
 }
 
 
+/* .wrapper-constraint class added to wrappers of each section to constrain the max-width, this will be replaced with auto for the central column when creating the main grid layout */
+.wrapper-constraint {
+    max-width: 736px;
+    background-color: tomato;
+    margin: 0 auto;
+}
