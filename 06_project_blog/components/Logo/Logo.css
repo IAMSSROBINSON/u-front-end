@@ -4,7 +4,7 @@
 }
 
 .logotype {
-    font-size: 1.8rem;
+    font-size: var(--font-size-large);
     text-decoration: none;
     color: inherit;
 }

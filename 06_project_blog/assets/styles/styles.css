@@ -26,14 +26,20 @@
     --accent-color-hover: hsl(var(--accent-color-hue), var(--accent-color-saturation), var(--accent-color-lightness-hover));
 
     /* FONT SIZES */
-    --label-font-size: 1.2rem;
-    --link-font-size: 1.6rem;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
 
     /* BORDER RADIUS */
-    --border-radius: 4px;
-    --border-radius-pill: 16px;
+    --border-radius-small: 4px;
+    --border-radius-medium: 16px;
+    --border-radius-large: 24px;
 
     /* SPACING */
+    --padding-small: 0.8rem ;
+    --padding-medium: 1.6rem;
+    --padding-large: 2.4rem;
+
     --spacing-medium: 24px;
 }
 
