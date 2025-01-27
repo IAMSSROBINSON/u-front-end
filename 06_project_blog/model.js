@@ -55,6 +55,9 @@ const model = {
             console.log("linkNames:", linkNames);
             return linkNames
         }
+    },
+    getData () {
+        return this.data;
     }
 
 
