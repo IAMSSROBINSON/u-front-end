@@ -3,6 +3,7 @@
 @import '../../components/Logo/Logo.css';
 @import '../../components/SubscribeForm/SubscribeForm.css';
 @import '../../components/Menu/Menu.css';
+@import '../../components/Link/Link.css';
 
 :root {
     font-size: 62.5%;

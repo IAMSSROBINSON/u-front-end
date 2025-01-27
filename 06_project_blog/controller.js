@@ -8,5 +8,6 @@ const controller = {
 }
 
 controller.init();
+model.init();
 
 export default controller;

@@ -66,6 +66,17 @@ const posts = [
     - Links
       - Blog
       - About
+      - : Create link component that accepts href and text arguments to populate the link.
+      - : Store link names in data file object under links: e.g { links: ["blog", "about"] }
+      - : create <nav class=".link-container>
+      - : create <ul class="link-list">
+      - : For each link create an <li class="link-item">
+      - : append to a document.createDocumentFragment() 
+      - : when iteration finishes append fragment to link-list
+      - : when iteration finishes append link-list to link-container
+      - : when iteration finishes append link-container to .header-wrapper
+      - : do this on initialization and then display: none the .link-container
+      - : display: block the .link-container when the first menu media query occurs
 
     - Subscribe form
       - email input
