@@ -35,15 +35,25 @@ const model = {
                 this.data = newData;
                 console.log("data merged.");
                 console.log(this.data);
+                this.getLinkNames();
         } else {
             this.data = siteData;
             console.log("siteData set.");
         }
     },
+    getLinks() {
+        const links = this?.data?.links;
+        if (links) {
+            console.log("getLinks:", links);
+            return links;
+        }
+    },
     getLinkNames () {
-        const linkNames = this.data.linkNames;
-        console.log("linkNames:", linkNames);
-        return linkNames;
+        const linkNames = this.getLinks().map(obj => obj.textValue);
+        if (linkNames.length !== 0) {
+            console.log("linkNames:", linkNames);
+            return linkNames
+        }
     }
 
 
