@@ -1,0 +1,22 @@
+.subject-list {
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4;
+    display: flex;
+    text-overflow: hidden;
+    overflow-x: auto;
+    gap: 2.4rem;
+    margin-top: var(--spacing-medium);
+}
+
+.subject-list::-webkit-scrollbar {
+    display: none;
+}
+
+.subject-list-item {
+    list-style: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--border-radius-pill);
+    font-size: var(--label-font-size);
+}

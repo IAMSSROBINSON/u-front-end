@@ -30,7 +30,7 @@ const view = {
 
         this.introSection = document.createElement("section");
         this.introSection.classList.add("intro-section");
-        this.introSection.classList.add("wrapper-constraint");
+        // this.introSection.classList.add("wrapper-constraint");
         
         this.h1 = Heading("h1", "blog");
         this.h1.classList.add("main-heading");
@@ -39,7 +39,8 @@ const view = {
 
         this.subjectList = document.createElement("ul");
         this.subjectList.classList.add("subject-list");
-        this.introSection.appendChild(this.subjectList);
+        this.bodyContainer.appendChild(this.subjectList);
+
     },
     setLinks (linksArr) {
         console.log("views setLinks arr:", linksArr);
