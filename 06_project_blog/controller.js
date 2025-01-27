@@ -12,9 +12,12 @@ const controller = {
             if (links) {
                 view.setLinks(links);
             } else {
-                console.log("No links");
+                throw new Error("No links");
             }
-        });
+        })
+        .catch((error) => {
+            console.log(error);
+        })
         view.init();
        
         
