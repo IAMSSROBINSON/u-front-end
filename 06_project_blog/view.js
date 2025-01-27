@@ -4,6 +4,7 @@ import SubscribeForm from './components/SubscribeForm/index.js';
 import Menu from './components/Menu/index.js';
 import Link from './components/Link/index.js';
 import Heading from './components/Heading/index.js';
+import Subject from './components/Subject/index.js';
 
 const view = {
     init : function () {
@@ -35,6 +36,10 @@ const view = {
         this.h1.classList.add("main-heading");
         this.introSection.appendChild(this.h1);
         this.bodyContainer.appendChild(this.introSection);
+
+        this.subjectList = document.createElement("ul");
+        this.subjectList.classList.add("subject-list");
+        this.introSection.appendChild(this.subjectList);
     },
     setLinks (linksArr) {
         console.log("views setLinks arr:", linksArr);
@@ -60,6 +65,15 @@ const view = {
             this.headerNavList.appendChild(docFragment);
         }
         
+    },
+    setSubjects(subjectsArr = []) {
+        console.log("views subjects arr:", subjectsArr);
+        let docFragment = document.createDocumentFragment();
+        subjectsArr.forEach((subjectString) => {
+            const subjectLi = new Subject(subjectString);
+            docFragment.appendChild(subjectLi);
+        })
+        this.subjectList.append(docFragment);
     }
 };
 

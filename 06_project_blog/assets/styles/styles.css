@@ -5,6 +5,7 @@
 @import '../../components/Menu/Menu.css';
 @import '../../components/Link/Link.css';
 @import '../../components/Heading/Heading.css';
+@import '../../components/Subject/Subject.css';
 
 :root {
     font-size: 62.5%;

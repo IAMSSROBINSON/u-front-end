@@ -56,6 +56,13 @@ const model = {
             return linkNames
         }
     },
+    getSubjects () {
+        const subjects = this?.data?.subjects;
+        if (subjects) {
+            console.log("getSubjects:", subjects);
+            return subjects;
+        }
+    },
     getData () {
         return this.data;
     }

@@ -89,7 +89,7 @@ const posts = [
       - Design
       - Ect..
       - : Create an array of subjects in the data file
-      - : Create getSubjects function in model that returns a list of subjects during initialization
+      - : Create getSubjects function in model that returns a list of subjects during view initialization through controller
       - : Create Subject Component that accepts a subjectNameValue
       - : For each subject generate a component and populate a new Subject(subjectNameValue)
       - : Create a container for all of the subject elements
