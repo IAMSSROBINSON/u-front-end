@@ -1,3 +1,9 @@
+@import './mediaQueries.css';
+@import '../../components/Header/Header.css';
+@import '../../components/Logo/Logo.css';
+@import '../../components/SubscribeForm/SubscribeForm.css';
+@import '../../components/Menu/Menu.css';
+
 :root {
     font-size: 62.5%;
 
