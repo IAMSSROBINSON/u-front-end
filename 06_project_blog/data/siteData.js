@@ -9,6 +9,7 @@ const siteData = {
             hrefValue: "about.html",
         }
     ],
+    subjects : ["Programming", "Design", "Philosophy", "Fitness", "Art", "Nutrition", "Languages"],
     currentlySelectedElement: null,
 };
 

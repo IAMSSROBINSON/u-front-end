@@ -2,7 +2,8 @@ import Header from './components/Header/index.js';
 import Logo from './components/Logo/index.js';
 import SubscribeForm from './components/SubscribeForm/index.js';
 import Menu from './components/Menu/index.js';
-import Link from './components/Link/Link.js';
+import Link from './components/Link/index.js';
+import Heading from './components/Heading/index.js';
 
 const view = {
     init : function () {
@@ -26,9 +27,14 @@ const view = {
         this.headerNav.append(this.headerNavList);
         this.headerWrapper.appendChild(this.headerNav);
 
-
-
-
+        this.introSection = document.createElement("section");
+        this.introSection.classList.add("intro-section");
+        this.introSection.classList.add("wrapper-constraint");
+        
+        this.h1 = Heading("h1", "blog");
+        this.h1.classList.add("main-heading");
+        this.introSection.appendChild(this.h1);
+        this.bodyContainer.appendChild(this.introSection);
     },
     setLinks (linksArr) {
         console.log("views setLinks arr:", linksArr);
@@ -36,11 +42,6 @@ const view = {
         // iterate over the arr and for each link generate a link component
         // use hrefValue and textValue in new Link(hrefValue, textValue)
         // see ./00_project_blog.md => component => Links
-       
-       
-
-        
-        
 
         let docFragment = document.createDocumentFragment();
         if (linksArr.length !== 0) {
