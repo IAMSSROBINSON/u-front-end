@@ -27,6 +27,7 @@ const model = {
             console.log(error.name);
             console.log(error.message);
          }
+         return this.data;
     },
     mergeData() {
         if (this.data && siteData) {

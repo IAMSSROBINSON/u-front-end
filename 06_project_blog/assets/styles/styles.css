@@ -24,7 +24,8 @@
 
 
     /* FONT SIZES */
-    --label-font-size: 12px;
+    --label-font-size: 1.2rem;
+    --link-font-size: 1.6rem;
 
 
     /* BORDER RADIUS */
@@ -73,3 +74,5 @@ img {
     /* background-color: tomato; */
     margin: 0 auto;
 }
+
+
