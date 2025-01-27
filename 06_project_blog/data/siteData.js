@@ -1,5 +1,5 @@
 const siteData = {
-    links: ["blog", "about"],
+    linkNames: ["blog", "about"],
     currentlySelectedElement: null,
 };
 

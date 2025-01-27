@@ -14,7 +14,7 @@ const model = {
 
              if (response.ok) {
                 data = await response.json();
-                console.log("data:", data);
+                console.log("response is ok");
                 this.data = data;
                 console.log("this.data:", this.data);
                 this.mergeData();
@@ -29,7 +29,7 @@ const model = {
          }
     },
     mergeData() {
-        if (this.data) {
+        if (this.data && siteData) {
                 console.log("We have data.");
                 let newData = Object.assign({}, siteData, this.data);
                 this.data = newData;
@@ -39,6 +39,11 @@ const model = {
             this.data = siteData;
             console.log("siteData set.");
         }
+    },
+    getLinkNames () {
+        const linkNames = this.data.linkNames;
+        console.log("linkNames:", linkNames);
+        return linkNames;
     }
 
 
