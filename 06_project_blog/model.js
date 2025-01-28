@@ -75,8 +75,13 @@ const model = {
     },
     getRandomSubject () {
         const subjects = this.getSubjects();
-        const randomNumber = Math.random() * subjects.length;
+        console.log("randomSubject subjects:", subjects);
+        
+
+        const randomNumber = Math.floor(Math.random() * subjects.length) + 1;
+        console.log("randomSubject subjects random number:", randomNumber);
         const randomSubject = subjects[randomNumber];
+        console.log("randomSubject:", randomSubject);
         return randomSubject ?? "Philosophy";
     }
 
