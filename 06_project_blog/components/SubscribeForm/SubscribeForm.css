@@ -1,14 +1,12 @@
 .subscribe-form {
     width: minmax(200px, 100%);
-    /* order: 1; */
-    /* margin-bottom: var(--margin-large); */
+    display: flex;
+    flex-direction: column;
 }
 
 .email-label {
     font-size: var(--font-size-medium);
-}
-
-.email-label {
+    text-align: center !important;
     display: inline-block;
     color: #fff;
     margin-bottom: var(--margin-xsmall);
@@ -26,7 +24,6 @@
 .email-input, .submit-button {
     border: none;
     padding: 0.8rem 1.6rem;
-
 }
 
 .submit-button {
