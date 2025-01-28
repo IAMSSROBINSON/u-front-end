@@ -10,6 +10,7 @@ const controller = {
             console.log("response data:", data);
             const links = model.getLinks();
             const subjects = model.getSubjects();
+            const posts = model.getPosts();
             if (links) {
                 view.setLinks(links);
             } else {
@@ -20,6 +21,12 @@ const controller = {
             } else {
                 throw new Error("No Subjects");
             }
+            if (posts) {
+                this.renderCards();
+            } else {
+                throw new Error("No Posts");
+            }
+
         })
         .catch((error) => {
             console.log(error);
@@ -27,7 +34,7 @@ const controller = {
         view.init();
     },
     renderCards () {
-        
+        const posts = model.getPosts();
     }
 }
 controller.init();

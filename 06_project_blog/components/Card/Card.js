@@ -1,18 +1,24 @@
-function Card (title, articleText, subject, dateStamp) {
+function Card (titleValue, articleTextValue, subjectValue, dateStampValue) {
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
 
-    const title = document.createElement("h3");
-    title.classList.add("card-title");
+    const cardTitle = document.createElement("h3");
+    cardTitle.classList.add("card-title");
+    cardTitle.textContent = titleValue;
+
 
     const article = document.createElement("p");
     article.classList.add("card-article");
+    article.textContent = articleTextValue;
 
     const subject = document.createElement("p");
     subject.classList.add("card-subject");
+    subject.textContent = subjectValue;
 
     const dateStamp = document.createElement("p");
-    parameter.classList.add("card-dateStamp");
+    dateStamp.classList.add("card-dateStamp");
+    dateStamp.textContent = dateStampValue;
+
 
     cardContainer.appendChild(title);
     cardContainer.appendChild(article);

@@ -32,7 +32,7 @@ const model = {
     mergeData() {
         if (this.data && siteData) {
                 console.log("We have data.");
-                let newData = Object.assign({}, siteData, this.data);
+                let newData = Object.assign({}, siteData, {posts: this.data});
                 this.data = newData;
                 console.log("data merged.");
                 console.log(this.data);
@@ -64,6 +64,10 @@ const model = {
         }
     },
     getData () {
+        return this.data;
+    },
+    getPosts () {
+        console.log("getPosts:", this.data.posts);
         return this.data;
     }
 

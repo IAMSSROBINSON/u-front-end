@@ -103,7 +103,7 @@ const posts = [
       - : from the controller render the cards in the view. 
       - : create a function in controller and then call it during initialization
       - : if there are no blog posts display a message in the UI stating as such
-      - : collate the data points from model in this function then create separate functions to handle individual datapoints where required
+      - : collate the data points from model in this function then create separate functions to handle individual data points where required
       - : create Card component
       - : Card should receive => new Card(title, articleText, subject, dateStamp)
       - : title => truncate to 2 lines but give explicit height so that the form / structure remains intact
