@@ -41,9 +41,11 @@
     --padding-medium: 1.6rem;
     --padding-large: 2.4rem;
 
-    --spacing-medium: 24px;
+    --spacing-medium: 2.4rem;
+    --spacing-large: 3.2rem;
+    --spacing-xlarge: 4rem;s
 
-    --heading-line-height: 1.2;
+    --heading-line-height: 1.3;
 }
 
 *,

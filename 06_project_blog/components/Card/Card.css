@@ -1,9 +1,10 @@
 ul.cards-list {
     grid-column: 2 / 3;
-    background-color: red;
+    /* background-color: red; */
 
     display: grid;
     grid-template-columns: auto;
+    gap: 2.4rem;
   
 }
 
@@ -16,15 +17,24 @@ ul.cards-list {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     text-decoration: none;
+    color: var(--text-grey-800);
 }
 
 .card-title {
     font-size: var(--font-size-medium);
     line-height: var(--heading-line-height);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-article {
-
+    font-size: var(--font-size-medium);
 }
 
 .card-footer {

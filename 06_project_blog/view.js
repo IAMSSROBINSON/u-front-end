@@ -89,7 +89,7 @@ const view = {
         console.log("setCards:", posts);
         const documentFragment = document.createDocumentFragment();
         if (posts) {
-            posts.forEach((postObj) => {
+            posts.slice(0, 8).forEach((postObj) => {
                 console.log("postObj:", postObj);
                 const card = new Card(postObj.id, postObj.title, postObj.article,  postObj.subject,  postObj.dateStamp);
                 console.log("setCards card:", card);
