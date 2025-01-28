@@ -51,7 +51,7 @@ const view = {
     
         this.copyright = Copyright("© iamssrobinson 2025");
         this.subscribeForm = SubscribeForm();
-        this.footer = Footer();
+        // this.footer = Footer();
         this.footer.appendChild(this.subscribeForm);
         this.footer.appendChild(this.copyright);
         this.bodyContainer.appendChild(this.footer);

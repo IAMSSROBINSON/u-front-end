@@ -107,11 +107,12 @@ img {
 .body-container {
     width: 100%;    
     display: grid;
-    grid-template-columns: auto minmax(auto, 736px) auto;
+    grid-template-columns: auto minmax(auto, max(736px)) auto;
     grid-template-rows: auto auto auto 1fr 100px;
     padding: var(--padding-large);
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 
 /* INTRO SECTION */
