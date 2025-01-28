@@ -77,7 +77,6 @@ const model = {
         const subjects = this.getSubjects();
         console.log("randomSubject subjects:", subjects);
         
-
         const randomNumber = Math.floor(Math.random() * subjects.length) + 1;
         console.log("randomSubject subjects random number:", randomNumber);
         const randomSubject = subjects[randomNumber];

@@ -28,10 +28,11 @@ const controller = {
                     posts.forEach((postObj) => {
                         const contructingObj = {};
                         contructingObj.id = Math.random().toString(32).substring(2);
-                        contructingObj.title = posts.title;
-                        contructingObj.article = posts.body;
+                        contructingObj.title = postObj.title;
+                        contructingObj.article = postObj.body;
                         contructingObj.subject = model.getRandomSubject();
                         contructingObj.dateStamp = this.createRandomDateStamp();
+                        console.log("contructingObj:", contructingObj);
                     })
                     // send an array of posts to the view
                     // the array should be an array of objects/posts
