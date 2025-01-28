@@ -25,7 +25,8 @@ const controller = {
             console.log(error);
         })
         view.init();
-       
+    },
+    renderCards () {
         
     }
 }

@@ -5,6 +5,8 @@ import Menu from './components/Menu/index.js';
 import Link from './components/Link/index.js';
 import Heading from './components/Heading/index.js';
 import Subject from './components/Subject/index.js';
+import Card from './components/Card/index.js';
+
 
 const view = {
     init : function () {
@@ -75,6 +77,9 @@ const view = {
             docFragment.appendChild(subjectLi);
         })
         this.subjectList.append(docFragment);
+    },
+    setCards () {
+
     }
 };
 
