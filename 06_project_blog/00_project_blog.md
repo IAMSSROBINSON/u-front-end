@@ -99,6 +99,14 @@ const posts = [
       - title (restrict characters to single line)
       - text (restrict content to 2 lines)
       - quickLink subject indicator
+      - date posted
+      - : create Card component
+      - : Card should receive => new Card(title, articleText, subject, dateStamp)
+      - : title => truncate to 2 lines but give explicit height so that the form / structure remains intact
+      - : articleText => truncate to 3 lines, -webkit-line-clamp: 3, using display: -webkit-box as well as accompanying rules.
+      - : subject => there is currently no subject as part of the blog posts, generate a random subject for each blog post just for this mock project
+      - : dateStamp => there is currently no dateStamp associated with each blog post, assign random date to each post for this mock project
+      - there are many post posts, restrict the number of shown posts initially e.g. 8, then create a button to reveal the next 8..., when all posts are shown hide the button
 
     - BlogTemplate
       - quickLink subject indicator
