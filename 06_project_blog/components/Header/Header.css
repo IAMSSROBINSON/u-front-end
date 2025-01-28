@@ -2,7 +2,6 @@
     grid-column: 2 / 3;
     height: auto;
     width: 100%;
-    background-color: #f8f9fa;
 }
 
 .header-wrapper {
@@ -13,25 +12,18 @@
 }
 
 .header-nav {
-    /* background-color: red; */
     width: 100%;
     display: none;
-    
-    /* visibility: hidden; */
 }
 
 .header-nav-list {
-    /* background-color: yellow; */
     display: flex;
-   justify-content: flex-end;
-   gap: 24px;
-
+    justify-content: flex-end;
+    gap: 24px;
 }
 
 .header-nav-list-item {
-   font-size: var(--link-font-size);
-
-   
+    font-size: var(--link-font-size);
 }
 
 .header-nav-list-item a {

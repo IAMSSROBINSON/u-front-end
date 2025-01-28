@@ -58,7 +58,8 @@
     --spacing-large: 3.2rem;
     --spacing-xlarge: 4rem;
 
-    --heading-line-height: 1.3;
+    --line-height-default: 1.5;
+    --line-height-heading: 1.3;
 }
 
 *,
@@ -75,7 +76,7 @@
 html {
     width: 100%;
     height: 100%;
-    line-height: 1.5;
+    line-height: var(--line-height-default);
     font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--grey-800);
 }
@@ -83,7 +84,6 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /* padding: 2.4rem; */
 }
 
 img {
@@ -95,7 +95,6 @@ img {
 /* BODY CONTAINER */
 .body-container {
     width: 100%;    
-    /* background-color: dodgerblue; */
     display: grid;
     grid-template-columns: auto minmax(auto, 736px) auto;
     grid-template-rows: auto auto auto 1fr auto;

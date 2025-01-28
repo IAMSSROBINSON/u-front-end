@@ -1,7 +1,5 @@
 ul.cards-list {
     grid-column: 2 / 3;
-    /* background-color: red; */
-
     display: grid;
     grid-template-columns: auto;
     gap: 4rem;
@@ -25,17 +23,11 @@ ul.cards-list {
     grid-template-rows: repeat(2, auto);
     text-decoration: none;
     color: var(--grey-800);
-    /* position: absolute; */
-    /* top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px; */
 }
 
 
 .card-header {
     display: flex;
-    /* background-color: yellow; */
     justify-content: space-between;
     margin-bottom: var(--margin-small);
 }
@@ -49,7 +41,7 @@ ul.cards-list {
 
 .card-title {
     font-size: var(--font-size-medium);
-    line-height: var(--heading-line-height);
+    line-height: var(--line-height-heading);
     font-weight: 600;
     margin-bottom: var(--margin-small);
     display: -webkit-box;
@@ -72,7 +64,6 @@ ul.cards-list {
 
 .card-subject {
     font-size: var(--font-size-small);
-    /* background-color: tomato; */
     padding: var(--padding-xsmall) var(--padding-medium);
     border-radius: var(--border-radius-medium);
     outline: 0.25px solid var(--grey-700);

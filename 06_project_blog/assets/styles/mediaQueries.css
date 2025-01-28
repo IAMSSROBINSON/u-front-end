@@ -2,15 +2,12 @@
    
     .header-container .header-nav {
         display: block;
-        /* visibility: visible; */
     }
     .header-nav-list {
         display: block;
-        /* visibility: visible; */
     }
     .header-nav-list-item {
         display: block;
-        /* visibility: visible; */
     }
     .menu-container {
         display: none;
