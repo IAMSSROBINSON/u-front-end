@@ -1,29 +1,29 @@
-function Card (titleValue, articleTextValue, subjectValue, dateStampValue) {
+function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) {
     const cardContainer = document.createElement("div");
+    cardContainer.setAttribute("id", idValue);
     cardContainer.classList.add("card-container");
 
     const cardTitle = document.createElement("h3");
     cardTitle.classList.add("card-title");
     cardTitle.textContent = titleValue;
 
+    const cardArticle = document.createElement("p");
+    cardArticle.classList.add("card-article");
+    cardArticle.textContent = articleValue;
 
-    const article = document.createElement("p");
-    article.classList.add("card-article");
-    article.textContent = articleTextValue;
+    const cardSubject = document.createElement("p");
+    cardSubject.classList.add("card-subject");
+    cardSubject.textContent = subjectValue;
 
-    const subject = document.createElement("p");
-    subject.classList.add("card-subject");
-    subject.textContent = subjectValue;
-
-    const dateStamp = document.createElement("p");
-    dateStamp.classList.add("card-dateStamp");
-    dateStamp.textContent = dateStampValue;
+    const cardDateStamp = document.createElement("p");
+    cardDateStamp.classList.add("card-dateStamp");
+    cardDateStamp.textContent = dateStampValue;
 
 
-    cardContainer.appendChild(title);
-    cardContainer.appendChild(article);
-    cardContainer.appendChild(subject);
-    cardContainer.appendChild(dateStamp);
+    cardContainer.appendChild(cardTitle);
+    cardContainer.appendChild(cardArticle);
+    cardContainer.appendChild(cardSubject);
+    cardContainer.appendChild(cardDateStamp);
 
     return cardContainer;
 }

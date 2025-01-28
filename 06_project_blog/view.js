@@ -43,6 +43,9 @@ const view = {
         this.subjectList.classList.add("subject-list");
         this.bodyContainer.appendChild(this.subjectList);
 
+        this.cardsContainer = document.createElement("div");
+        this.cardsContainer.classList.add("cards-container");
+
     },
     setLinks (linksArr) {
         console.log("views setLinks arr:", linksArr);
@@ -81,6 +84,17 @@ const view = {
     setCards (posts) {
         // render cards in the UI and populate cards with data from posts
         // the posts argument should be ready when receiving so construct in controller first
+        console.log("setCards:", posts);
+        const documentFragment = document.createDocumentFragment();
+        if (posts) {
+            posts.forEach((postObj) => {
+                console.log("postObj:", postObj);
+                const card = new Card(postObj.id, postObj.title, postObj.article,  postObj.subject,  postObj.dateStamp);
+               
+
+                documentFragment.appendChild(card);
+            })
+        }
     }
 };
 

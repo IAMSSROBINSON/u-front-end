@@ -23,7 +23,6 @@ const controller = {
             }
             if (posts) {
                 if (posts.length > 0) {
-                    view.setCards(posts);
                     const constructPosts = [];
                     posts.forEach((postObj) => {
                         const contructingObj = {};
@@ -33,6 +32,7 @@ const controller = {
                         contructingObj.subject = model.getRandomSubject();
                         contructingObj.dateStamp = this.createRandomDateStamp();
                         console.log("contructingObj:", contructingObj);
+                        constructPosts.push(contructingObj);
                     })
                     // send an array of posts to the view
                     // the array should be an array of objects/posts
@@ -43,6 +43,7 @@ const controller = {
                         // dateStamp
                     // construct each data point from here using functions to get the values
                     // 
+                    view.setCards(constructPosts);
                 }
             } else {
                 throw new Error("No Posts");
