@@ -68,7 +68,16 @@ const model = {
     },
     getPosts () {
         console.log("getPosts:", this.data.posts);
-        return this.data;
+        const posts = this.data.posts;
+        if (posts) {
+            return posts;
+        }
+    },
+    getRandomSubject () {
+        const subjects = this.getSubjects();
+        const randomNumber = Math.random() * subjects.length;
+        const randomSubject = subjects[randomNumber];
+        return randomSubject ?? "Philosophy";
     }
 
 

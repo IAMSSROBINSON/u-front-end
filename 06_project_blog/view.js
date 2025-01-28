@@ -78,8 +78,9 @@ const view = {
         })
         this.subjectList.append(docFragment);
     },
-    setCards () {
-
+    setCards (posts) {
+        // render cards in the UI and populate cards with data from posts
+        // the posts argument should be ready when receiving so construct in controller first
     }
 };
 
