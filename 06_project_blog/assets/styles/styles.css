@@ -7,7 +7,7 @@
 @import '../../components/Link/Link.css';
 @import '../../components/Heading/Heading.css';
 @import '../../components/Subject/Subject.css';
-@import '../../components/Card/index.css';
+@import '../../components/Card/Card.css';
 
 /* GENERAL */
 :root {

@@ -96,6 +96,7 @@ const view = {
 
                 documentFragment.appendChild(card);
             })
+            this.cardsList.append(documentFragment);
         }
     }
 };
