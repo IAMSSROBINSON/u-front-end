@@ -5,12 +5,19 @@ ul.cards-list {
     display: grid;
     grid-template-columns: auto;
     gap: 4rem;
-  
 }
 
 .card-list-item {
     list-style: none;
+    position: relative;
 }
+
+.card-list-item:hover {
+    box-shadow: 0 0 0 8px var(--grey-100);
+    background-color: var(--grey-100);
+    border-radius: var(--border-radius-small);
+}
+
 
 .card-link {
     display: grid;
@@ -18,13 +25,26 @@ ul.cards-list {
     grid-template-rows: repeat(2, auto);
     text-decoration: none;
     color: var(--grey-800);
+    /* position: absolute; */
+    /* top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px; */
+}
+
+
+.card-header {
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: space-between;
+    margin-bottom: var(--margin-small);
 }
 
 .card-dateStamp {
     font-size: var(--font-size-small);
-    align-self: flex-end;
-    margin-bottom: var(--margin-small);
+    align-self: flex-start;
     color: var(--grey-700);
+    width: min-content;
 }
 
 .card-title {
@@ -48,7 +68,6 @@ ul.cards-list {
     line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: var(--margin-medium);
 }
 
 .card-subject {
