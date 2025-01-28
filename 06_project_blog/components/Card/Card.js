@@ -1,5 +1,6 @@
 function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) {
-    const cardContainer = document.createElement("div");
+    const cardContainer = document.createElement("a");
+    cardContainer.setAttribute("href", "../../blogTemplate.html");
     cardContainer.setAttribute("id", idValue);
     cardContainer.classList.add("card-container");
 

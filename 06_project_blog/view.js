@@ -90,7 +90,7 @@ const view = {
             posts.forEach((postObj) => {
                 console.log("postObj:", postObj);
                 const card = new Card(postObj.id, postObj.title, postObj.article,  postObj.subject,  postObj.dateStamp);
-               
+                console.log("setCards card:", card);
 
                 documentFragment.appendChild(card);
             })
