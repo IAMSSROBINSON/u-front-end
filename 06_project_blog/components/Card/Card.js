@@ -8,6 +8,10 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
     cardLink.setAttribute("rel", "noopener noreferrer");
     cardLink.classList.add("card-link");
 
+    const cardDateStamp = document.createElement("p");
+    cardDateStamp.classList.add("card-dateStamp");
+    cardDateStamp.textContent = dateStampValue;
+
     const cardTitle = document.createElement("h3");
     cardTitle.classList.add("card-title");
     cardTitle.textContent = titleValue;
@@ -16,23 +20,15 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
     cardArticle.classList.add("card-article");
     cardArticle.textContent = articleValue;
 
-    const cardFooter = document.createElement("div");
-    cardFooter.classList.add("card-footer");
-
     const cardSubject = document.createElement("p");
     cardSubject.classList.add("card-subject");
     cardSubject.textContent = subjectValue;
 
-    const cardDateStamp = document.createElement("p");
-    cardDateStamp.classList.add("card-dateStamp");
-    cardDateStamp.textContent = dateStampValue;
 
-
+    cardLink.appendChild(cardDateStamp);
     cardLink.appendChild(cardTitle);
     cardLink.appendChild(cardArticle);
-    cardFooter.appendChild(cardSubject)
-    cardFooter.appendChild(cardDateStamp)
-    cardLink.appendChild(cardFooter);
+    cardLink.appendChild(cardSubject);
     cardListItem.appendChild(cardLink);
 
     return cardListItem;

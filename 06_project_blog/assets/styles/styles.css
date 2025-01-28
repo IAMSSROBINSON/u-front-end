@@ -16,6 +16,8 @@
     /* VARIABLES */
 
     /* COLORS */
+    --grey-600: #868e96;
+    --grey-700: #495057;
     --grey-800: #343a40;
     --accent-color-hue: 61;
     --accent-color-saturation: 100%;
@@ -37,6 +39,13 @@
     --border-radius-large: 24px;
 
     /* SPACING */
+    --margin-xsmall: 0.4rem ;
+    --margin-small: 0.8rem ;
+    --margin-medium: 1.6rem;
+    --margin-large: 2.4rem;
+    --margin-xlarge: 3.2rem;
+    --margin-xxlarge: 4rem;
+
     --padding-xsmall: 0.4rem ;
     --padding-small: 0.8rem ;
     --padding-medium: 1.6rem;
