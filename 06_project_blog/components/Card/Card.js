@@ -16,6 +16,9 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
     cardArticle.classList.add("card-article");
     cardArticle.textContent = articleValue;
 
+    const cardFooter = document.createElement("div");
+    cardFooter.classList.add("card-footer");
+
     const cardSubject = document.createElement("p");
     cardSubject.classList.add("card-subject");
     cardSubject.textContent = subjectValue;
@@ -27,8 +30,9 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
 
     cardLink.appendChild(cardTitle);
     cardLink.appendChild(cardArticle);
-    cardLink.appendChild(cardSubject);
-    cardLink.appendChild(cardDateStamp);
+    cardFooter.appendChild(cardSubject)
+    cardFooter.appendChild(cardDateStamp)
+    cardLink.appendChild(cardFooter);
     cardListItem.appendChild(cardLink);
 
     return cardListItem;

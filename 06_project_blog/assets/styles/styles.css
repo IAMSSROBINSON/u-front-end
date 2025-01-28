@@ -16,7 +16,7 @@
     /* VARIABLES */
 
     /* COLORS */
-    --default-text-color: hsl(210, 10%, 23%);
+    --text-grey-800: #343a40;
     --accent-color-hue: 61;
     --accent-color-saturation: 100%;
     --accent-color-lightness: 80%;
@@ -42,6 +42,8 @@
     --padding-large: 2.4rem;
 
     --spacing-medium: 24px;
+
+    --heading-line-height: 1.2;
 }
 
 *,
@@ -60,7 +62,7 @@ html {
     height: 100%;
     line-height: 1.5;
     font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color: var(--default-text-color);
+    color: var(--text-grey-800);
 }
 
 body {
