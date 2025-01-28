@@ -32,11 +32,22 @@ ul.cards-list {
     margin-bottom: var(--margin-small);
 }
 
+.card-subject {
+    font-size: var(--font-size-small);
+    padding: var(--padding-xsmall) var(--padding-medium);
+    border-radius: var(--border-radius-medium);
+    outline: 0.25px solid var(--grey-700);
+    width: min-content;
+    color: var(--grey-700);
+    order: 1;
+}
+
 .card-dateStamp {
     font-size: var(--font-size-small);
     align-self: flex-start;
     color: var(--grey-700);
     width: min-content;
+    order: 2
 }
 
 .card-title {
@@ -60,13 +71,4 @@ ul.cards-list {
     line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.card-subject {
-    font-size: var(--font-size-small);
-    padding: var(--padding-xsmall) var(--padding-medium);
-    border-radius: var(--border-radius-medium);
-    outline: 0.25px solid var(--grey-700);
-    width: min-content;
-    color: var(--grey-700);
 }
