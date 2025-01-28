@@ -6,6 +6,8 @@ import Link from './components/Link/index.js';
 import Heading from './components/Heading/index.js';
 import Subject from './components/Subject/index.js';
 import Card from './components/Card/index.js';
+import Footer from './components/Footer/index.js';
+import Copyright from './components/Copyright/index.js';
 
 
 const view = {
@@ -32,7 +34,6 @@ const view = {
 
         this.introSection = document.createElement("section");
         this.introSection.classList.add("intro-section");
-        // this.introSection.classList.add("wrapper-constraint");
         
         this.h1 = Heading("h1", "blog");
         this.h1.classList.add("main-heading");
@@ -46,6 +47,14 @@ const view = {
         this.cardsList = document.createElement("ul");
         this.cardsList.classList.add("cards-list");
         this.bodyContainer.appendChild(this.cardsList);
+
+    
+        this.copyright = Copyright("© iamssrobinson 2025");
+        this.subscribeForm = SubscribeForm();
+        this.footer = Footer();
+        this.footer.appendChild(this.subscribeForm);
+        this.footer.appendChild(this.copyright);
+        this.bodyContainer.appendChild(this.footer);
 
 
     },

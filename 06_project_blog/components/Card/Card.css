@@ -2,7 +2,7 @@ ul.cards-list {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: auto;
-    gap: 4rem;
+    gap: var(--gap-xxlarge);
 }
 
 .card-list-item {

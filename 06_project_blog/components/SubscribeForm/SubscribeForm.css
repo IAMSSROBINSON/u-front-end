@@ -1,16 +1,17 @@
+.subscribe-form {
+    width: minmax(200px, 100%);
+    /* order: 1; */
+    /* margin-bottom: var(--margin-large); */
+}
 
 .email-label {
-    font-size: var(--label-font-size);
+    font-size: var(--font-size-medium);
 }
 
 .email-label {
     display: inline-block;
-    color: inherit;
-    margin-bottom: 4px;
-
-    @media screen and (min-width: 540px) {
-        display: none;
-    }
+    color: #fff;
+    margin-bottom: var(--margin-xsmall);
 }
 
 .input-and-button-container {

@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: var(--gap-large);;
 }
 
 .header-nav {
@@ -19,7 +19,7 @@
 .header-nav-list {
     display: flex;
     justify-content: flex-end;
-    gap: 24px;
+    gap: var(--gap-large);
 }
 
 .header-nav-list-item {
