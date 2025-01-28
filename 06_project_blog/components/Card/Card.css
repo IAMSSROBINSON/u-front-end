@@ -4,7 +4,7 @@ ul.cards-list {
 
     display: grid;
     grid-template-columns: auto;
-    gap: 2.4rem;
+    gap: 3.2rem;
   
 }
 
@@ -17,7 +17,7 @@ ul.cards-list {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     text-decoration: none;
-    color: var(--text-grey-800);
+    color: var(--grey-800);
 }
 
 .card-title {
@@ -35,6 +35,13 @@ ul.cards-list {
 
 .card-article {
     font-size: var(--font-size-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1.6rem;
 }
 
 .card-footer {
@@ -44,9 +51,14 @@ ul.cards-list {
 }
 
 .card-subject {
-
+    font-size: var(--font-size-small);
+    /* background-color: tomato; */
+    padding: var(--padding-xsmall) var(--padding-medium);
+    border-radius: var(--border-radius-medium);
+    outline: 1px solid var(--grey-800);
 }
 
 .card-dateStamp {
-
+    font-size: var(--font-size-small);
+    align-self: flex-end;
 }

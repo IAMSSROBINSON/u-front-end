@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: minmax(220px, 1fr) auto;
     grid-template-rows: auto;
-    outline: 1px solid var(--text-grey-800);
+    outline: 1px solid var(--grey-800);
     border-radius: var(--border-radius);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .submit-button {
-    border-left: 1px solid var(--text-grey-800);
+    border-left: 1px solid var(--grey-800);
     cursor: pointer;
     background-color: var(--accent-color);
 }
