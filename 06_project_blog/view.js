@@ -43,8 +43,10 @@ const view = {
         this.subjectList.classList.add("subject-list");
         this.bodyContainer.appendChild(this.subjectList);
 
-        this.cardsContainer = document.createElement("div");
-        this.cardsContainer.classList.add("cards-container");
+        this.cardsList = document.createElement("ul");
+        this.cardsList.classList.add("cards-list");
+        this.bodyContainer.appendChild(this.cardsList);
+
 
     },
     setLinks (linksArr) {

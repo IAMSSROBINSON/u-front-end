@@ -1,9 +1,12 @@
 function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) {
-    const cardContainer = document.createElement("a");
-    cardContainer.setAttribute("href", "../../blogTemplate.html");
-    cardContainer.setAttribute("rel", "noopener noreferrer");
-    cardContainer.setAttribute("id", idValue);
-    cardContainer.classList.add("card-container");
+    const cardListItem = document.createElement("li");
+    cardListItem.classList.add("card-list-item");
+    cardListItem.setAttribute("id", idValue);
+
+    const cardLink = document.createElement("a");
+    cardLink.setAttribute("href", "../../blogTemplate.html");
+    cardLink.setAttribute("rel", "noopener noreferrer");
+    cardLink.classList.add("card-link");
 
     const cardTitle = document.createElement("h3");
     cardTitle.classList.add("card-title");
@@ -22,12 +25,13 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
     cardDateStamp.textContent = dateStampValue;
 
 
-    cardContainer.appendChild(cardTitle);
-    cardContainer.appendChild(cardArticle);
-    cardContainer.appendChild(cardSubject);
-    cardContainer.appendChild(cardDateStamp);
+    cardLink.appendChild(cardTitle);
+    cardLink.appendChild(cardArticle);
+    cardLink.appendChild(cardSubject);
+    cardLink.appendChild(cardDateStamp);
+    cardListItem.appendChild(cardLink);
 
-    return cardContainer;
+    return cardListItem;
 }
 
 export default Card;
