@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+    ul.header-nav-list {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .menu-icon-container {
+        display: none;
+    }
+}
+
+
+

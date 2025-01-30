@@ -1,4 +1,9 @@
 const siteData = {
+    logo: {
+        logoType: "iamssrobinson",
+        url: "index.html",
+        logoMark: null,
+    },
     author: {
         name: "iamssrobinson",
         copyright: "© iamssrobinson 2025",

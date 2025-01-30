@@ -1,0 +1,15 @@
+.header-nav-list {
+    display: flex;
+    gap: 24px;
+    /* display: none; */
+}
+
+.header-nav-list-item {
+    list-style: none;
+}   
+
+.header-nav-list-item-link {
+    text-decoration: none;
+    color: var(--spacegrey-800);
+    font-size: var(--font-size-large);
+}

@@ -1,0 +1,13 @@
+.logo-container {
+    margin-right: auto;
+    align-self: flex-start;
+}
+
+.logo-container a {
+   text-decoration: none;
+}
+
+.logo-type {
+    font-size: var(--font-size-xlarge);
+    color: var(--spacegrey-800);
+}

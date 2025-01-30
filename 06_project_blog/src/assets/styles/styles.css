@@ -1,11 +1,47 @@
+@import './mediaQueries.css';
+@import '../../components/Link/Link.css';
+@import '../../components/Logo/Logo.css';
+@import '../../components/Menu/Menu.css';
+@import '../../components/Heading/Heading.css';
+@import '../../components/Subject/Card.css';
+@import '../../components/Card/Card.css';
+@import '../../components/Copyright/Copyright.css';
+@import '../../components/SubscribeForm/SubscribeForm.css';
+
 :root {
     font-size: 62.5%;
 
     /* Variables */
-    
 
+    /* Colors => Attribution: https://yeun.github.io/open-color/ */
+    --spacegrey-900: #212529;
+    --spacegrey-800: #343a40;
+    --spacegrey-700: #495057;
+    --spacegrey-600: #868e96;
+    --spacegrey-500: #adb5bd;
+    --spacegrey-400: #ced4da;
+    --spacegrey-300: #dee2e6;
+    --spacegrey-200: #f1f3f5;
+    --spacegrey-100: #f8f9fa;
+
+    /* Font size */
+    --font-size-xsmall: 1rem;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.4rem;
+    --font-size-large: 1.6rem;
+    --font-size-xlarge: 1.8rem;
+    --font-size-xxlarge: 3.2rem;
+    
     /* Spacing */
-    --line-height-default: 1.5;
+    --line-height-small: 1.2;
+    --line-height-medium: 1.5;
+    --line-height-large: 1.8;
+
+    --padding-small: 0.8rem;
+    --padding-medium: 1.6rem;
+    --padding-large: 2.4rem;
+    --padding-xlarge: 3.2rem;
+    --padding-xxlarge: 4rem;
 }
 
 *,
@@ -22,9 +58,8 @@
 html {
     width: 100%;
     height: 100%;
-    line-height: var(--line-height-default);
+    line-height: var(--line-height-medium);
     font-family: "Space Mono", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
 }
 
 img {
@@ -36,4 +71,19 @@ img {
 body {
     width: 100%;
     height: 100%;
+    display: grid;
+    padding: var(--padding-large);
+    grid-template-columns: auto minmax(auto, 736px) auto;
+    grid-template-rows: auto auto auto 1fr auto;
+    color: var(--spacegrey-800);
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+}
+
+.header-nav {
+    /* Styles for header-nav-list and children inside /src/components/Link/Link.css */
 }
