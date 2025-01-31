@@ -67,13 +67,12 @@
     --gap-xxlarge: 4rem;
 
     /* Border Radius */
+    --border-radius-xsmall: 0.4rem;
     --border-radius-small: 0.8rem;
     --border-radius-medium: 1.6rem;
     --border-radius-large: 2.4rem;
     --border-radius-xlarge: 3.2rem;
     --border-radius-xxlarge: 4rem;
-
-
 }
 
 *,
@@ -102,7 +101,7 @@ img {
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
     padding: var(--padding-large);
     grid-template-columns: auto minmax(auto, 736px) auto;
@@ -119,3 +118,13 @@ body {
 /* .header-nav {
     Styles for header-nav-list and children inside /src/components/Link/Link.css
 }   */
+
+.footer {
+    grid-column: 1/-1;
+    background-color: var(--spacegrey-800);
+    margin-top: var(--margin-large);
+    margin-left: calc(var(--margin-large) * -1);
+    margin-right: calc(var(--margin-large) * -1);
+    margin-bottom: calc(var(--margin-large) * -1);
+    padding: var(--padding-large);
+}

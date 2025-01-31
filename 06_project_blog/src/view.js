@@ -4,6 +4,8 @@ import Link from './components/Link/index.js';
 import Subject from './components/Subject/index.js';
 import Heading from './components/Heading/index.js';
 import Card from './components/Card/index.js';
+import Copyright from './components/Copyright/index.js';
+import SubscribeForm from './components/SubscribeForm/index.js';
 
 const view = {
     initPhaseOne () {
@@ -64,6 +66,12 @@ const view = {
             documentFragment.append(liCard);
         });
        this.cardsList.append(documentFragment);
+    },
+    initPhaseSeven () {
+        const copyright = Copyright("© iamssrobinson 2025");
+        const subscribeForm = SubscribeForm();
+        this.footer.append(copyright);
+        this.footer.append(subscribeForm);
     }
 }
 export default view;

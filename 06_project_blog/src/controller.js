@@ -110,8 +110,9 @@ const controller = {
                 ],
             },
         ]);
-        
-    }
+        view.initPhaseSeven();
+    },
+   
 }
 controller.init();
 export default controller;

@@ -1,0 +1,7 @@
+.copyright {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    color: var(--spacegrey-100);
+    font-size: var(--font-size-medium);
+}
