@@ -32,7 +32,7 @@ const controller = {
                 ],
             },
             {
-                title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, alias!",
+                title: "Nemo, tempore exercitationem autem culpa aliquam placeat voluptates temporibus molestiae vero libero eveniet voluptatem blanditiis eius ut dolore inventore.",
                 article: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, tempore exercitationem autem culpa aliquam placeat voluptates temporibus molestiae vero libero eveniet voluptatem blanditiis eius ut dolore inventore. Maiores porro obcaecati repellat iure dolores fuga labore, voluptatem quas quo aspernatur expedita.",
                 subjects: ["programming"],
                 dateStamp: "01.01.2025",

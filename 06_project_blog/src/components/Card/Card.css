@@ -8,28 +8,66 @@ ul.cards-list {
     min-height: calc(100vh - 230px);
     overflow-y: auto;
     margin-top: var(--margin-medium);
+    padding: var(--padding-small);
+
 }
 
 .card-list-item {
-    list-style: none;
+    list-style: none; 
+}
+
+.card-list-item:hover {
+   box-shadow: 0px 0px 0px 10px var(--spacegrey-200);
+   background-color: var(--spacegrey-100);
+   border-radius: var(--border-radius-small);
 }
 
 .card-link {
-
+    text-decoration: none;
+    color: var(--spacegrey-700);
 }
 
 .card-title {
-
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-small);
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .card-article {
+    margin-top: var(--margin-small);
+    font-size: var(--font-size-large);
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.card-footer {
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--margin-small);
 
 }
 
 .card-subject {
-
+    font-size: var(--font-size-xsmall);
+    outline: 0.5px solid var(--spacegrey-600);
+    padding: var(--padding-xsmall) var(--padding-small);
+    border-radius: var(--border-radius-large);
+    color: var(--spacegrey-700);
 }
 
 .card-dateStamp {
-
+    font-size: var(--font-size-xsmall);
+    align-self: flex-end;
+    color: var(--spacegrey-700);
 }

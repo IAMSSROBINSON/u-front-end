@@ -15,6 +15,9 @@ function Card (titleValue, articleValue, subjectValue, dateStampValue) {
     article.classList.add("card-article");
     article.textContent = articleValue;
 
+    const cardFooter = document.createElement("div");
+    cardFooter.classList.add("card-footer");
+
     const subject = document.createElement("p");
     subject.classList.add("card-subject");
     subject.textContent = subjectValue;
@@ -25,8 +28,9 @@ function Card (titleValue, articleValue, subjectValue, dateStampValue) {
 
     link.appendChild(title);
     link.appendChild(article);
-    link.appendChild(subject);
-    link.appendChild(dateStamp);
+    cardFooter.appendChild(subject);
+    cardFooter.appendChild(dateStamp);
+    link.appendChild(cardFooter);
 
     li.appendChild(link);
 
