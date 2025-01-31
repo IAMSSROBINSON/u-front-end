@@ -47,3 +47,7 @@
   - the data to populate each card will come from the data source through the controller to get the data from model and pass into the view.
   - initially just render sample data
   - receive an array of article objects, render a card component for each object and populate data points
+
+- Footer:
+  - the footer will show copyright information and it will house a form to take a users emails address, there will be a button to submit the form
+  - 
