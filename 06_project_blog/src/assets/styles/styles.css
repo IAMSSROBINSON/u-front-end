@@ -3,7 +3,7 @@
 @import '../../components/Logo/Logo.css';
 @import '../../components/Menu/Menu.css';
 @import '../../components/Heading/Heading.css';
-@import '../../components/Subject/Card.css';
+@import '../../components/Subject/Subject.css';
 @import '../../components/Card/Card.css';
 @import '../../components/Copyright/Copyright.css';
 @import '../../components/SubscribeForm/SubscribeForm.css';
@@ -24,24 +24,47 @@
     --spacegrey-200: #f1f3f5;
     --spacegrey-100: #f8f9fa;
 
-    /* Font size */
+    --accent-500: hsl(61, 100%, 80%);
+
+    /* Font */
     --font-size-xsmall: 1rem;
     --font-size-small: 1.2rem;
     --font-size-medium: 1.4rem;
     --font-size-large: 1.6rem;
     --font-size-xlarge: 1.8rem;
     --font-size-xxlarge: 3.2rem;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
     
     /* Spacing */
     --line-height-small: 1.2;
     --line-height-medium: 1.5;
     --line-height-large: 1.8;
 
+    /* Padding */
     --padding-small: 0.8rem;
     --padding-medium: 1.6rem;
     --padding-large: 2.4rem;
     --padding-xlarge: 3.2rem;
     --padding-xxlarge: 4rem;
+
+    /* Gap */
+    --gap-small: 0.8rem;
+    --gap-medium: 1.6rem;
+    --gap-large: 2.4rem;
+    --gap-xlarge: 3.2rem;
+    --gap-xxlarge: 4rem;
+
+    /* Border Radius */
+    --border-radius-small: 0.8rem;
+    --border-radius-medium: 1.6rem;
+    --border-radius-large: 2.4rem;
+    --border-radius-xlarge: 3.2rem;
+    --border-radius-xxlarge: 4rem;
+
+
 }
 
 *,
@@ -85,5 +108,5 @@ body {
 }
 
 /* .header-nav {
-    /* Styles for header-nav-list and children inside /src/components/Link/Link.css */
-} */
+    Styles for header-nav-list and children inside /src/components/Link/Link.css
+}   */

@@ -15,6 +15,7 @@ const controller = {
                 hrefValue: "about.html"
             },
         ]);
+        view.initPhaseFour(["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"]);
     }
 }
 controller.init();

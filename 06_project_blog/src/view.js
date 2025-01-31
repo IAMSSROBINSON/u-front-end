@@ -1,6 +1,7 @@
 import Logo from './components/Logo/index.js';
 import Menu from './components/Menu/index.js';
 import Link from './components/Link/index.js';
+import Subject from './components/Subject/index.js';
 
 const view = {
     initPhaseOne : function () {
@@ -40,5 +41,15 @@ const view = {
         this.headerNavList.appendChild(documentFragment);
         this.headerNav.appendChild(this.headerNavList);
     },
+    initPhaseFour (subjectsArr) {
+        console.log("initPhaseFour subjectsArr:", subjectsArr);
+        const documentFragment = document.createDocumentFragment();
+
+        subjectsArr.forEach((subjectText) => {
+            const li = Subject(subjectText);
+            documentFragment.appendChild(li);
+        });
+        this.subjectsList.appendChild(documentFragment);    
+    }
 }
 export default view;

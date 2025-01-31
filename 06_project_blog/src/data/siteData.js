@@ -18,7 +18,7 @@ const siteData = {
             hrefValue: "about.html"
         },
     ],
-    topics: ["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"],
+    subjects: ["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"],
     posts: [
         {
             title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, alias!",
