@@ -1,0 +1,35 @@
+ul.cards-list {
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: var(--gap-large);
+    min-height: calc(100vh - 230px);
+    overflow-y: auto;
+    margin-top: var(--margin-medium);
+}
+
+.card-list-item {
+    list-style: none;
+}
+
+.card-link {
+
+}
+
+.card-title {
+
+}
+
+.card-article {
+
+}
+
+.card-subject {
+
+}
+
+.card-dateStamp {
+
+}

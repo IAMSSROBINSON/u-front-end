@@ -2,11 +2,12 @@
     grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     overflow-x: auto;
     text-overflow: hidden;
     gap: var(--gap-medium);
     padding: var(--padding-small) 1px;
-    margin-top: var(--margin-medium);
 }
 
 .subjects-list::-webkit-scrollbar {

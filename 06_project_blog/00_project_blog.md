@@ -41,3 +41,9 @@
         - : iterate over posts
         - : return posts with subjects that include subject clicked on
         - : display these posts in the view through the controller
+
+- Card:
+  - a card is a sample of a larger blog post.
+  - the data to populate each card will come from the data source through the controller to get the data from model and pass into the view.
+  - initially just render sample data
+  - receive an array of article objects, render a card component for each object and populate data points

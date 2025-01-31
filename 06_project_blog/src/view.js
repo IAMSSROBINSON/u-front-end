@@ -3,6 +3,7 @@ import Menu from './components/Menu/index.js';
 import Link from './components/Link/index.js';
 import Subject from './components/Subject/index.js';
 import Heading from './components/Heading/index.js';
+import Card from './components/Card/index.js';
 
 const view = {
     initPhaseOne () {
@@ -11,7 +12,7 @@ const view = {
         this.header = document.querySelector(".header");
         this.mainHeading = document.querySelector(".main-heading");
         this.subjectsList = document.querySelector(".subjects-list");
-        this.main = document.querySelector(".main");
+        this.cardsList = document.querySelector(".cards-list");
         this.footer = document.querySelector(".footer");
     },
     initPhaseTwo () {
@@ -42,7 +43,11 @@ const view = {
         this.headerNavList.appendChild(documentFragment);
         this.headerNav.appendChild(this.headerNavList);
     },
-    initPhaseFour (subjectsArr) {
+    initPhaseFour (pageHeadingText) {
+        const h1 = Heading(pageHeadingText);
+        this.mainHeading.append(h1);
+    },
+    initPhaseFive (subjectsArr) {
         console.log("initPhaseFour subjectsArr:", subjectsArr);
         const documentFragment = document.createDocumentFragment();
 
@@ -52,9 +57,13 @@ const view = {
         });
         this.subjectsList.appendChild(documentFragment);    
     },
-    initPhaseFive (pageHeadingText) {
-        const h1 = Heading(pageHeadingText);
-        this.mainHeading.append(h1);
+    initPhaseSix (arrOfPosts) {
+        const documentFragment = document.createDocumentFragment();
+        arrOfPosts.forEach((postObj) => {
+            const liCard = Card(postObj.title, postObj.article, postObj.subjects[0], postObj.dateStamp);
+            documentFragment.append(liCard);
+        });
+       this.cardsList.append(documentFragment);
     }
 }
 export default view;
