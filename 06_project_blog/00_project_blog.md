@@ -16,6 +16,16 @@
 - append both components to the header
 
 
+- Heading:
+  - each page will have a heading that coincides with the link text in the header-navigation that is clicked
+    - to start just render 'blog' with a heading component and paint to the UI in the init stage
+    - the index.html page heading will be 'blog' the about.html heading will be 'about'
+    - initially the homepage/index.html will load, the blog link will have .selected set as an attribute, when another link it selected it will be removed for other links and appended to the link clicked on
+    - store the currentlySelectedLink as an element in the model
+    - get the currentlySelectedLink.textContent e.g. 'blog' and render a heading component for the page and repaint the .mainHeading with the new value
+  
+
+
 - Subject:
   - a subject is a list of topics that there are blog posts on
     - : first subject should always be 'All' so user can navigate back to seeing all subjects

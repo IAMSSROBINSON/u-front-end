@@ -1,0 +1,11 @@
+.main-heading {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: var(--margin-large);
+}
+
+.page-heading {
+    font-size: var(--font-size-xxlarge);
+}

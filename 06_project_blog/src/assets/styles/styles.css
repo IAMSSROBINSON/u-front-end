@@ -50,6 +50,13 @@
     --padding-xlarge: 3.2rem;
     --padding-xxlarge: 4rem;
 
+     /* Margin */
+     --margin-small: 0.8rem;
+     --margin-medium: 1.6rem;
+     --margin-large: 2.4rem;
+     --margin-xlarge: 3.2rem;
+     --margin-xxlarge: 4rem;
+
     /* Gap */
     --gap-small: 0.8rem;
     --gap-medium: 1.6rem;

@@ -2,9 +2,10 @@ import Logo from './components/Logo/index.js';
 import Menu from './components/Menu/index.js';
 import Link from './components/Link/index.js';
 import Subject from './components/Subject/index.js';
+import Heading from './components/Heading/index.js';
 
 const view = {
-    initPhaseOne : function () {
+    initPhaseOne () {
         // cache the DOM
         this.body = document.body;
         this.header = document.querySelector(".header");
@@ -13,7 +14,7 @@ const view = {
         this.main = document.querySelector(".main");
         this.footer = document.querySelector(".footer");
     },
-    initPhaseTwo : function () {
+    initPhaseTwo () {
         // setup header
         this.logo = Logo();
         this.menu = Menu();
@@ -23,7 +24,7 @@ const view = {
         this.header.appendChild(this.logo);
         this.header.appendChild(this.headerNav);
     },
-    initPhaseThree : function (arrObjs = []) {
+    initPhaseThree (arrObjs = []) {
         this.headerNavList = document.createElement("ul");
         this.headerNavList.classList.add("header-nav-list");
 
@@ -50,6 +51,10 @@ const view = {
             documentFragment.appendChild(li);
         });
         this.subjectsList.appendChild(documentFragment);    
+    },
+    initPhaseFive (pageHeadingText) {
+        const h1 = Heading(pageHeadingText);
+        this.mainHeading.append(h1);
     }
 }
 export default view;

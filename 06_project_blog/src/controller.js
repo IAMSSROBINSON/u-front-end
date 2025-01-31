@@ -16,6 +16,7 @@ const controller = {
             },
         ]);
         view.initPhaseFour(["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"]);
+        view.initPhaseFive("blog");
     }
 }
 controller.init();

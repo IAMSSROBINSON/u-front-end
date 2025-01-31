@@ -6,6 +6,7 @@
     text-overflow: hidden;
     gap: var(--gap-medium);
     padding: var(--padding-small) 1px;
+    margin-top: var(--margin-medium);
 }
 
 .subjects-list::-webkit-scrollbar {
