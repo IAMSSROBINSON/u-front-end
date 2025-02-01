@@ -3,13 +3,12 @@ ul.cards-list {
     grid-row: 4/5;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
     gap: var(--gap-large);
     min-height: calc(100% - 240px);
     overflow-y: auto;
     margin-top: var(--margin-medium);
     padding: var(--padding-small);
-
 }
 
 .card-list-item {
@@ -51,11 +50,8 @@ ul.cards-list {
 }
 
 .card-footer {
-    /* background-color: tomato; */
     display: flex;
-    justify-content: space-between;
     margin-top: var(--margin-small);
-
 }
 
 .card-subject {
@@ -64,6 +60,7 @@ ul.cards-list {
     padding: var(--padding-xsmall) var(--padding-small);
     border-radius: var(--border-radius-large);
     color: var(--spacegrey-700);
+    margin-right: auto;
 }
 
 .card-dateStamp {

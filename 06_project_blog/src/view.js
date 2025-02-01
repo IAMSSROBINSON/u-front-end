@@ -70,8 +70,11 @@ const view = {
     initPhaseSeven () {
         const copyright = Copyright("© iamssrobinson 2025");
         const subscribeForm = SubscribeForm();
-        this.footer.append(copyright);
-        this.footer.append(subscribeForm);
+        const container = document.createElement("div");
+        container.classList.add("copyright-and-form-container");
+        container.append(subscribeForm);
+        container.append(copyright);
+        this.footer.append(container);
     }
 }
 export default view;
