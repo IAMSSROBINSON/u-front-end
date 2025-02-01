@@ -18,7 +18,9 @@
     .menu-icon-container {
         display: none;
     }
+}
 
+@media screen and (min-width: 601px) {
     .copyright-and-form-container {
         display: unset;
         margin: 0 auto;
