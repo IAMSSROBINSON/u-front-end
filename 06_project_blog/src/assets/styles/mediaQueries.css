@@ -1,22 +1,26 @@
 @media screen and (max-width: 480px) {
     body {
-        
         padding: var(--padding-large);
-}
+    }
+
     ul.header-nav-list {
         display: none;
     }
-    
+
+    .copyright-and-form-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-large);
+    }
 }
 
 @media screen and (min-width: 480px) {
-
-
     .menu-icon-container {
         display: none;
     }
 
     .copyright-and-form-container {
+        display: unset;
         margin: 0 auto;
         max-width: 736px;
         display: grid;
@@ -38,6 +42,7 @@
      .subscribe-input-and-button-container {
         display: grid;
         grid-template-columns: 1fr auto;
+        background-color: red;
      }
 
      .subscribe-form-email-input {
@@ -46,7 +51,8 @@
 
      .footer .subscribe-button {
         grid-column: 2/3;
-        border-left: 1px solid var(--spacegrey-800); 
+        border-top: 0;
+        border-left: 1px solid var(--spacegrey-800);
      }
 
     .footer .copyright {

@@ -1,7 +1,6 @@
 .copyright {
-    /* grid-column: 1/-1;
-    grid-row: 2/3; */
     color: var(--spacegrey-100);
     font-size: var(--font-size-medium);
     text-align: center;
+    opacity: 75%;
 }

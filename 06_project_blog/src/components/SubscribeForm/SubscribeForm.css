@@ -1,40 +1,34 @@
-.copyright-and-form-container {
-    
-}
-
-.subscribe-form {
-  
-}
-
 .subscribe-form-label {
     color: var(--spacegrey-100);
     font-size: var(--font-size-medium);
     display: inline-block;
-    margin-bottom: var(--margin-xsmall);
+    margin-bottom: var(--margin-small);
 }
 
 .subscribe-input-and-button-container {
-    background-color: var(--accent-500);
     display: grid;
     grid-template-columns: 1fr;
-    outline: 1px solid var(--grey-800);
-    border-radius: var(--border-radius);
+    overflow: hidden;
+    border-radius: var(--border-radius-xsmall);
+}
+
+::placeholder {
+    color: var(--spacegrey-600);
+    font-size: var(--font-size-small);
 }
 
 .subscribe-form-email-input {
     border: none;
-    /* outline: none;
-    appearance: none;
-    margin: 0; */
-    /* outline: 1px solid grey; */
-    padding: 0.8rem 1.6rem;
+    padding: var(--padding-medium) var(--padding-large);
 }
 
 .subscribe-button {
     border: none;
-    padding: 0.8rem 1.6rem;
-    /* border-left: 1px solid var(--spacegrey-800); */
+    padding: var(--padding-medium) var(--padding-large);
     cursor: pointer;
+    background-color: var(--accent-500);
+    border-top: 1px solid var(--spacegrey-800);
+    font-size: var(--font-size-medium);
 }
 
 .subscribe-button:hover {

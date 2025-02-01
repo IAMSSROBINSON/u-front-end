@@ -19,7 +19,7 @@ function SubscribeForm () {
     email.setAttribute("id", "subscribe-form-email-input");
     email.setAttribute("name", "email");
     email.setAttribute("required", "");
-    email.setAttribute("placeholder", "myEmail@example.com");
+    email.setAttribute("placeholder", "myemail@example.com");
 
     const button = document.createElement("input");
     button.classList.add("subscribe-button");
