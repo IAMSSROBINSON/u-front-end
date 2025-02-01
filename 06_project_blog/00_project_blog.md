@@ -50,4 +50,10 @@
 
 - Footer:
   - the footer will show copyright information and it will house a form to take a users emails address, there will be a button to submit the form
-  - 
+
+
+
+
+## Blog Template
+When a user clicks on a blog post card/link a blog page should open up and the blog template items should be populated with the data points from the card.
+  - : blog template html
