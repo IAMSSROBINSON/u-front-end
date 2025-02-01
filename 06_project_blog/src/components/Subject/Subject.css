@@ -16,7 +16,7 @@
 
 li.subject-list-item {
     list-style: none;
-    padding: var(--padding-medium) var(--padding-large);
+    padding: var(--padding-small) var(--padding-medium);
     border-radius: var(--border-radius-xxlarge);
     cursor: pointer;
     background-color: var(--accent-500);

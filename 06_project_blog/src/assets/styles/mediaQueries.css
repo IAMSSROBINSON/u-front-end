@@ -1,6 +1,6 @@
 @media screen and (max-width: 480px) {
     body {
-        padding: var(--padding-large);
+        margin-bottom: var(--padding-large);
     }
 
     ul.header-nav-list {

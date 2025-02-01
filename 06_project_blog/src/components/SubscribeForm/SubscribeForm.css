@@ -1,5 +1,5 @@
 .subscribe-form-label {
-    color: var(--spacegrey-100);
+    color: var(--spacegrey-800);
     font-size: var(--font-size-medium);
     display: inline-block;
     margin-bottom: var(--margin-small);
@@ -10,10 +10,11 @@
     grid-template-columns: 1fr;
     overflow: hidden;
     border-radius: var(--border-radius-xsmall);
+    outline: 1px solid  var(--spacegrey-600);
 }
 
 ::placeholder {
-    color: var(--spacegrey-600);
+    color: var(--spacegrey-700);
     font-size: var(--font-size-small);
 }
 
