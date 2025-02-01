@@ -24,7 +24,15 @@
     --spacegrey-200: #f1f3f5;
     --spacegrey-100: #f8f9fa;
 
-    --accent-500: hsl(61, 100%, 80%);
+    /* Accent color */
+    --accent-hue: 61;
+    --accent-saturation: 100%;
+    --accent-lightness: 80%;
+    --accent-lightness-hover: 85%;
+
+    --accent-500: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
+
+    --accent-color-hover: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness-hover));
 
     /* Font */
     --font-size-xsmall: 1rem;

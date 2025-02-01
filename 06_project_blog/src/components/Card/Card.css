@@ -16,7 +16,7 @@ ul.cards-list {
 }
 
 .card-list-item:hover {
-   box-shadow: 0px 0px 0px 10px var(--spacegrey-200);
+   box-shadow: 0px 0px 0px 10px var(--spacegrey-100);
    background-color: var(--spacegrey-100);
    border-radius: var(--border-radius-small);
 }
