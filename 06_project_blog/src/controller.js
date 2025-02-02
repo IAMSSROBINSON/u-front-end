@@ -15,8 +15,8 @@ const controller = {
                 hrefValue: "about.html"
             },
         ]);
-        view.initPhaseFour("blog");
-        view.initPhaseFive(["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"]);
+        view.initPhaseFour(["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"]);
+        view.initPhaseFive("blog");
         view.initPhaseSix([
             {
                 title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, alias!",
@@ -110,7 +110,7 @@ const controller = {
                 ],
             },
         ]);
-        view.initPhaseSeven();
+        // view.initPhaseSeven();
     },
    
 }

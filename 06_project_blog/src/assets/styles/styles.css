@@ -114,31 +114,9 @@ body {
     height: 100%;
     display: grid;
     padding: var(--padding-large);
-    /* padding-bottom: var(--padding-large); */
     grid-template-columns: minmax(0, auto) minmax(auto, 736px) minmax(0, auto);
-    grid-template-rows: auto 48px auto auto auto;
+    grid-template-rows: min-content min-content min-content auto auto;
     color: var(--spacegrey-800);
 }
 
-.header {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    margin-bottom: var(--margin-xlarge);
-}
-
-/* .header-nav {
-    Styles for header-nav-list and children inside /src/components/Link/Link.css
-}   */
-
-.footer {
-    grid-column: 2/3;
-    grid-row: 5;
-    background-color: var(--spacegrey-100);
-    padding: var(--padding-large); 
-    margin-top: var(--margin-large);
-    border-radius: var(--border-radius-small);
-    /* margin: var(--margin-large) calc(var(--margin-large) * -1) calc(var(--margin-large) * -1) calc(var(--margin-large) * -1);
-    padding: var(--padding-large); */
-}
 

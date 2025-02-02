@@ -9,6 +9,8 @@
     gap: var(--gap-medium);
     padding: var(--padding-small) 1px;
     /* margin-top: var(--margin-large); */
+        margin-bottom: var(--margin-medium);
+    
 }
 
 .subjects-list::-webkit-scrollbar {

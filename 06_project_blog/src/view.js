@@ -7,17 +7,17 @@ import Heading from './components/Heading/index.js';
 import Card from './components/Card/index.js';
 import Copyright from './components/Copyright/index.js';
 import SubscribeForm from './components/SubscribeForm/index.js';
+import Footer from './components/Footer/index.js';
 
 const view = {
     initPhaseOne () {
         // cache the DOM
         this.body = document.body;
         this.header = Header();
-        this.body.appendChild(this.header);
-        this.mainHeading = document.querySelector(".main-heading");
-        this.subjectsList = document.querySelector(".subjects-list");
-        this.cardsList = document.querySelector(".cards-list");
-        this.footer = document.querySelector(".footer");
+        this.body.prepend(this.header);
+        // this.cardsList = document.querySelector(".cards-list");
+        this.footer = Footer();
+        // this.header.after(this.footer);
     },
     initPhaseTwo () {
         // setup header
@@ -47,11 +47,10 @@ const view = {
         this.headerNavList.appendChild(documentFragment);
         this.headerNav.appendChild(this.headerNavList);
     },
-    initPhaseFour (pageHeadingText) {
-        const h1 = Heading(pageHeadingText);
-        this.mainHeading.append(h1);
-    },
-    initPhaseFive (subjectsArr) {
+    initPhaseFour (subjectsArr) {
+        this.subjectsList = document.createElement("ul");
+        this.subjectsList.classList.add("subjects-list");
+
         console.log("initPhaseFour subjectsArr:", subjectsArr);
         const documentFragment = document.createDocumentFragment();
 
@@ -60,14 +59,24 @@ const view = {
             documentFragment.appendChild(li);
         });
         this.subjectsList.appendChild(documentFragment);    
+        this.header.after(this.subjectsList);
     },
+    initPhaseFive (pageHeadingText) {
+        this.headingContainer = Heading(pageHeadingText);
+        this.subjectsList.after(this.headingContainer);
+    },
+    
     initPhaseSix (arrOfPosts) {
+        this.cardsList = document.createElement("ul");
+        this.cardsList.classList.add("cards-list");
+
         const documentFragment = document.createDocumentFragment();
         arrOfPosts.forEach((postObj) => {
             const liCard = Card(postObj.title, postObj.article, postObj.subjects[0], postObj.dateStamp);
             documentFragment.append(liCard);
         });
        this.cardsList.append(documentFragment);
+       this.subjectsList.after(this.cardsList);
     },
     initPhaseSeven () {
         const copyright = Copyright("© iamssrobinson 2025");
