@@ -1,3 +1,4 @@
+import Header from './components/Header/index.js';
 import Logo from './components/Logo/index.js';
 import Menu from './components/Menu/index.js';
 import Link from './components/Link/index.js';
@@ -11,7 +12,8 @@ const view = {
     initPhaseOne () {
         // cache the DOM
         this.body = document.body;
-        this.header = document.querySelector(".header");
+        this.header = Header();
+        this.body.appendChild(this.header);
         this.mainHeading = document.querySelector(".main-heading");
         this.subjectsList = document.querySelector(".subjects-list");
         this.cardsList = document.querySelector(".cards-list");
