@@ -5,10 +5,6 @@ ul.cards-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
     gap: var(--gap-large);
-    /* min-height: calc(100%); */
-    /* overflow-y: auto; */
-    margin-top: var(--margin-medium);
-    padding: var(--padding-small);
 }
 
 .card-list-item {

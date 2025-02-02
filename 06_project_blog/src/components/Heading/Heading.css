@@ -1,9 +1,9 @@
 .main-heading {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
     display: flex;
     justify-content: flex-start;
-    margin: var(--margin-small) 0;
+    margin: var(--margin-medium) 0;
 }
 
 .page-heading {

@@ -1,6 +1,6 @@
 .subjects-list {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -8,6 +8,7 @@
     text-overflow: hidden;
     gap: var(--gap-medium);
     padding: var(--padding-small) 1px;
+    /* margin-top: var(--margin-large); */
 }
 
 .subjects-list::-webkit-scrollbar {
