@@ -13,9 +13,12 @@ import SubscribeForm from './components/SubscribeForm/index.js';
 const view = {
     initPhaseOne () {
         // cache the DOM
+        this.bodyContainer = document.createElement("div");
+        this.bodyContainer.classList.add("body-container");
         this.body = document.body;
         this.header = Header();
-        this.body.prepend(this.header);
+        this.bodyContainer.append(this.header);
+        this.body.prepend(this.bodyContainer);
     },
     initPhaseTwo () {
         // setup header
@@ -57,11 +60,11 @@ const view = {
             documentFragment.appendChild(li);
         });
         this.subjectsList.appendChild(documentFragment);    
-        this.header.after(this.subjectsList);
+        this.bodyContainer.appendChild(this.subjectsList);
     },
     initPhaseFive (pageHeadingText) {
         this.headingContainer = Heading(pageHeadingText);
-        this.subjectsList.after(this.headingContainer);
+        this.bodyContainer.appendChild(this.headingContainer);
     },
     initPhaseSix (arrOfPosts) {
         this.cardsList = document.createElement("ul");
@@ -73,7 +76,7 @@ const view = {
             documentFragment.append(liCard);
         });
        this.cardsList.append(documentFragment);
-       this.subjectsList.after(this.cardsList);
+       this.bodyContainer.appendChild(this.cardsList);
     },
     initPhaseSeven () {
         this.footer = Footer();
@@ -84,7 +87,7 @@ const view = {
         container.append(this.subscribeForm);
         container.append(this.copyright);
         this.footer.appendChild(container);
-        this.cardsList.after(this.footer);
+        this.bodyContainer.appendChild(this.footer);
     }
 }
 export default view;
