@@ -33,15 +33,18 @@ const controller = {
         console.log("controller.handlePostEvent(event):", event);
         const card = event.target.closest(".card-list-item");
         console.log("card:", card);
+        
         if (card) {
+            const link = card.firstElementChild;
+            console.log("link:", link);
             const id = card?.id;
             model.setCurrentPostElement(card);
 
             const currentBlogPost = model.getCurrentlySelectedPostElement();
             console.log("controller getCurrentlySelectedPostElement:", model.currentlySelectedPostElement);
+            window.location.href = link.href;
+            console.log("controller getCurrentlySelectedPostElement:", model.currentlySelectedPostElement);
         }
-
-       
         
     },
   
