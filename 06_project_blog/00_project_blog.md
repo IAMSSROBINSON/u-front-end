@@ -57,6 +57,7 @@
 ## Blog Template
 When a user clicks on a blog post card/link a blog page should open up and the blog template items should be populated with the data points from the card.
   - : blog template html
+    - : validate the href from the window.location.href and make sure it includes blogTemplate in the path to render the correct components
   - : header area stays the same
   - : subject area should show label of the subject of the post that was clicked on
   - : heading should become the title of the post
@@ -64,7 +65,15 @@ When a user clicks on a blog post card/link a blog page should open up and the b
   - : then render the article portion of the post
   - : back button
   - : footer stays the same
-  - 
+
 
 ### Blog Template Components
 Separate all the components like header and footer so that they can be painted to the UI whenever required e.g. render the header in the homepage and the same header in the blogTemplate page.
+
+- render header
+- : now data is required to render information from the post that was clicked
+- : setup model
+  - : init in model will be initialized at the start of the visit when the controller and view are first initialized
+  - : check for blotSite as a key on localStorage
+  - : if it exists then parse the value object from string to jsObj and set a data on the model
+  - : if not exists then set an object to data with appropriate keyValues 
