@@ -15,9 +15,7 @@ const view = {
         this.body = document.body;
         this.header = Header();
         this.body.prepend(this.header);
-        // this.cardsList = document.querySelector(".cards-list");
         this.footer = Footer();
-        // this.header.after(this.footer);
     },
     initPhaseTwo () {
         // setup header
@@ -79,13 +77,15 @@ const view = {
        this.subjectsList.after(this.cardsList);
     },
     initPhaseSeven () {
+        this.footer = Footer();
         const copyright = Copyright("© iamssrobinson 2025");
         const subscribeForm = SubscribeForm();
         const container = document.createElement("div");
         container.classList.add("copyright-and-form-container");
         container.append(subscribeForm);
         container.append(copyright);
-        this.footer.append(container);
+        this.footer.appendChild(container);
+        this.cardsList.after(this.footer);
     }
 }
 export default view;

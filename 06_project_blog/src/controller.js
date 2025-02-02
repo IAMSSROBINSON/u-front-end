@@ -110,7 +110,7 @@ const controller = {
                 ],
             },
         ]);
-        // view.initPhaseSeven();
+        view.initPhaseSeven();
     },
    
 }
