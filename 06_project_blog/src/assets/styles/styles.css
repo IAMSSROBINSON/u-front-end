@@ -120,7 +120,8 @@ body {
     display: grid;
     padding: var(--padding-large);
     grid-template-columns: minmax(0, auto) minmax(auto, 736px) minmax(0, auto);
-    grid-template-rows: min-content min-content min-content auto auto;
+    grid-template-rows: min-content min-content min-content 1fr min-content;
+    grid-auto-rows: min-content;
     color: var(--spacegrey-800);
 }
 

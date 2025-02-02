@@ -1,4 +1,4 @@
-function Card (titleValue, articleValue, subjectValue, dateStampValue) {
+function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) {
     const li = document.createElement("li");
     li.classList.add("card-list-item");
     li.setAttribute("id", generateRandomId());

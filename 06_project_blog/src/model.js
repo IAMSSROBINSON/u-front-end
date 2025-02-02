@@ -15,8 +15,35 @@ const model = {
             console.log("blogSite now set locally!");
         }
     },
-    currentlySelectedLink: null,
-    currentlySelectedPost: null,
+    getData () {
+        console.log("model getData:", this.data);
+        return this.data;
+    },
+    getPosts () {
+        const posts = this.data.posts;
+        if (posts) {
+            console.log("model getPosts:", posts);
+            return posts;
+        }
+    },
+    setCurrentPostElement (postElement) {
+        console.log("model event setCurrentPost:", event);
+        
+        if (postElement) {
+            this.currentlySelectedPostElement = postElement;
+            this.currentlySelectedPostId = postElement?.id;
+            console.log("currentlySelectedPostElement:", this.currentlySelectedPostElement);
+            console.log("currentlySelectedPostId: ", this.currentlySelectedPostId);
+            }
+    },
+    getCurrentlySelectedPostElement () {
+        return this.currentlySelectedPostElement;
+    },
+    currentlySelectedPageLink: null,
+    currentlySelectedPostElement: null,
+    currentlySelectedPostId: null,
     currentURL: null,
+    isSubscribed: false,
+
 }
 export default model;

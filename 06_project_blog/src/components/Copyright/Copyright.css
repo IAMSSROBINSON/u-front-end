@@ -3,4 +3,6 @@
     font-size: var(--font-size-medium);
     text-align: center;
     opacity: 75%;
+    margin-top: 16px;
 }
+

@@ -9,6 +9,7 @@ ul.cards-list {
 
 .card-list-item {
     list-style: none; 
+    height: min-content;
 }
 
 .card-list-item:hover {

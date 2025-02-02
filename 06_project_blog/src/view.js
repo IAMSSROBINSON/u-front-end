@@ -1,3 +1,4 @@
+import handlePostEvent from './controller.js';
 import Header from './components/Header/index.js';
 import Logo from './components/Logo/index.js';
 import Menu from './components/Menu/index.js';
@@ -8,6 +9,7 @@ import Card from './components/Card/index.js';
 import Footer from './components/Footer/index.js';
 import Copyright from './components/Copyright/index.js';
 import SubscribeForm from './components/SubscribeForm/index.js';
+import controller from './controller.js';
 
 
 const view = {
@@ -68,11 +70,13 @@ const view = {
     },
     initPhaseSix (arrOfPosts) {
         this.cardsList = document.createElement("ul");
+        this.cardsList.addEventListener("click", (event) => controller.handlePostEvent(event));
+
         this.cardsList.classList.add("cards-list");
 
         const documentFragment = document.createDocumentFragment();
         arrOfPosts.forEach((postObj) => {
-            const liCard = Card(postObj.title, postObj.article, postObj.subjects[0], postObj.dateStamp);
+            const liCard = Card(postObj.id, postObj.title, postObj.article, postObj.subjects[0], postObj.dateStamp);
             documentFragment.append(liCard);
         });
        this.cardsList.append(documentFragment);
