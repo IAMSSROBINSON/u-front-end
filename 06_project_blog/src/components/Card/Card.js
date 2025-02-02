@@ -5,7 +5,7 @@ function Card (titleValue, articleValue, subjectValue, dateStampValue) {
 
     const link = document.createElement("a");
     link.classList.add("card-link");
-    link.setAttribute("href", "#");
+    link.setAttribute("href", "/src/blogTemplate.html");
 
     const title = document.createElement("h3");
     title.classList.add("card-title");

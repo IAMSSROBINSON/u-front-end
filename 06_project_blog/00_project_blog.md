@@ -57,3 +57,14 @@
 ## Blog Template
 When a user clicks on a blog post card/link a blog page should open up and the blog template items should be populated with the data points from the card.
   - : blog template html
+  - : header area stays the same
+  - : subject area should show label of the subject of the post that was clicked on
+  - : heading should become the title of the post
+  - : show an image associated with the article (should be available on the post object)
+  - : then render the article portion of the post
+  - : back button
+  - : footer stays the same
+  - 
+
+### Blog Template Components
+Separate all the components like header and footer so that they can be painted to the UI whenever required e.g. render the header in the homepage and the same header in the blogTemplate page.
