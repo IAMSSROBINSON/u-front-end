@@ -5,9 +5,10 @@ import Link from './components/Link/index.js';
 import Subject from './components/Subject/index.js';
 import Heading from './components/Heading/index.js';
 import Card from './components/Card/index.js';
+import Footer from './components/Footer/index.js';
 import Copyright from './components/Copyright/index.js';
 import SubscribeForm from './components/SubscribeForm/index.js';
-import Footer from './components/Footer/index.js';
+
 
 const view = {
     initPhaseOne () {
@@ -15,7 +16,6 @@ const view = {
         this.body = document.body;
         this.header = Header();
         this.body.prepend(this.header);
-        this.footer = Footer();
     },
     initPhaseTwo () {
         // setup header
@@ -63,7 +63,6 @@ const view = {
         this.headingContainer = Heading(pageHeadingText);
         this.subjectsList.after(this.headingContainer);
     },
-    
     initPhaseSix (arrOfPosts) {
         this.cardsList = document.createElement("ul");
         this.cardsList.classList.add("cards-list");
@@ -78,12 +77,12 @@ const view = {
     },
     initPhaseSeven () {
         this.footer = Footer();
-        const copyright = Copyright("© iamssrobinson 2025");
-        const subscribeForm = SubscribeForm();
+        this.copyright = Copyright("© iamssrobinson 2025");
+        this.subscribeForm = SubscribeForm();
         const container = document.createElement("div");
         container.classList.add("copyright-and-form-container");
-        container.append(subscribeForm);
-        container.append(copyright);
+        container.append(this.subscribeForm);
+        container.append(this.copyright);
         this.footer.appendChild(container);
         this.cardsList.after(this.footer);
     }
