@@ -14,7 +14,8 @@ const controller = {
             view.initPhaseSeven();
         }
         if (window.location.href.includes("blogTemplate")) {
-            console.log("window.location.href.includes('blogTemplate'):", window.location.href.includes("blogTemplate"))
+            console.log("window.location.href.includes('blogTemplate'):", window.location.href.includes("blogTemplate"));
+            console.log("getData:", model.getData());
             view.initPhaseOne();
             view.initPhaseTwo();
             view.initPhaseThree(model.getLinks());
@@ -30,12 +31,10 @@ const controller = {
             const link = card.firstElementChild;
             console.log("link:", link);
             const id = card?.id;
-            model.setCurrentPostElement(card);
-
-            const currentBlogPost = model.getCurrentlySelectedPostElement();
-            console.log("controller getCurrentlySelectedPostElement:", model.currentlySelectedPostElement);
-            window.location.href = link.href;
-            console.log("controller getCurrentlySelectedPostElement:", model.currentlySelectedPostElement);
+            model.setCurrentPostElementId(card);
+            console.log("controller obj:", model.getCurrentlySelectedPostElementData());
+            // window.location.href = link.href;
+    
         }
         
     },

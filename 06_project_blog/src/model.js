@@ -10,7 +10,8 @@ const model = {
             console.log("localData:", this.data);
         } else {
             console.log("You had no local data.");
-            this.data = siteData;
+            this.data = Object.assign({}, siteData, {currentlySelectedPageLink: null, currentlySelectedPostElement: null, currentlySelectedPostId: null,  currentURL: null, isSubscribed: false, currentlySelectedPageLink: null});
+            
             localStorage.setItem("blogSite", JSON.stringify(this.data));
             console.log("blogSite now set locally!");
         }
@@ -26,18 +27,19 @@ const model = {
             return posts;
         }
     },
-    setCurrentPostElement (postElement) {
-        console.log("model event setCurrentPost:", event);
-        
+    setCurrentPostElementId (postElement) {
+
         if (postElement) {
-            this.currentlySelectedPostElement = postElement;
-            this.currentlySelectedPostId = postElement?.id;
-            console.log("currentlySelectedPostElement:", this.currentlySelectedPostElement);
-            console.log("currentlySelectedPostId: ", this.currentlySelectedPostId);
+            this.data.currentlySelectedPostId = postElement?.id;
+            console.log("currentlySelectedPostId: ", this.data.currentlySelectedPostId);
+            localStorage.setItem("blogSite", JSON.stringify(this.data));
             }
     },
-    getCurrentlySelectedPostElement () {
-        return this.currentlySelectedPostElement;
+    getCurrentlySelectedPostElementData () {
+        const id = this.data.currentlySelectedPostId;
+        if (id) {
+            return this.data.posts.find(obj => obj.id === id);
+        }
     },
     getLinks() {
         const links = this.data?.links;
@@ -52,11 +54,6 @@ const model = {
             return subjects;
         }
     },  
-    currentlySelectedPageLink: null,
-    currentlySelectedPostElement: null,
-    currentlySelectedPostId: null,
-    currentURL: null,
-    isSubscribed: false,
-
+ 
 }
 export default model;

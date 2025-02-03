@@ -1,7 +1,7 @@
 function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) {
     const li = document.createElement("li");
     li.classList.add("card-list-item");
-    li.setAttribute("id", generateRandomId());
+    li.setAttribute("id", idValue);
 
     const link = document.createElement("a");
     link.classList.add("card-link");
