@@ -46,6 +46,12 @@ const model = {
             return links;
         }
     },
+    getSubjects () {
+        const subjects = this.data?.subjects;
+        if (subjects.length !== 0) {
+            return subjects;
+        }
+    },  
     currentlySelectedPageLink: null,
     currentlySelectedPostElement: null,
     currentlySelectedPostId: null,

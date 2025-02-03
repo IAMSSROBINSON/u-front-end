@@ -8,7 +8,7 @@ const controller = {
             view.initPhaseOne();
             view.initPhaseTwo();
             view.initPhaseThree(view.initPhaseThree(model.getLinks()));
-            view.initPhaseFour(["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"]);
+            view.initPhaseFour(model.getSubjects());
             view.initPhaseFive("blog");
             view.initPhaseSix(model.getPosts());
             view.initPhaseSeven();
