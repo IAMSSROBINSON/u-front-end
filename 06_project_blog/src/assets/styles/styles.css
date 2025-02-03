@@ -112,17 +112,22 @@ img {
 body {
     width: 100%;
     height: 100%;
+    display: grid;
+    /* padding: var(--padding-large); */
+    grid-template-columns: minmax(0, auto) minmax(auto, 736px) minmax(0, auto);
+    grid-template-rows: min-content 1fr min-content;
+    color: var(--spacegrey-800);
 }
 
-.body-container {
+.main {
+    grid-column: 2/3;
+    grid-row: 2/3;
     width: 100%;
     height: 100%;
     display: grid;
     padding: var(--padding-large);
-    grid-template-columns: minmax(0, auto) minmax(auto, 736px) minmax(0, auto);
-    grid-template-rows: min-content min-content min-content 1fr min-content;
-    grid-auto-rows: min-content;
-    color: var(--spacegrey-800);
+    grid-template-columns: subgrid;
+    grid-template-rows: min-content min-content 1fr    
 }
 
 

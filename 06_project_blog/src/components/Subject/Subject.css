@@ -1,6 +1,6 @@
 .subjects-list {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -9,7 +9,7 @@
     gap: var(--gap-medium);
     padding: var(--padding-small) 1px;
     /* margin-top: var(--margin-large); */
-        margin-bottom: var(--margin-medium);
+    margin-bottom: var(--margin-large);
     
 }
 
