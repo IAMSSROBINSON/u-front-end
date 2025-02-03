@@ -10,7 +10,7 @@ const model = {
             console.log("localData:", this.data);
         } else {
             console.log("You had no local data.");
-            this.data = Object.assign({}, siteData, {currentlySelectedPageLink: null, currentlySelectedPostElement: null, currentlySelectedPostId: null,  currentURL: null, isSubscribed: false, currentlySelectedPageLink: null});
+            this.data = Object.assign({}, siteData, {currentlySelectedPageLink: null, currentlySelectedPostElement: null, currentlySelectedPostId: null,  currentURL: null, isSubscribed: false});
             
             localStorage.setItem("blogSite", JSON.stringify(this.data));
             console.log("blogSite now set locally!");
@@ -36,10 +36,7 @@ const model = {
             }
     },
     getCurrentlySelectedPostElementData () {
-        const id = this.data.currentlySelectedPostId;
-        if (id) {
-            return this.data.posts.find(obj => obj.id === id);
-        }
+        return this.data.posts.find(obj => obj.id === this.data?.currentlySelectedPostId) || null;
     },
     getLinks() {
         const links = this.data?.links;

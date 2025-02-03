@@ -15,12 +15,9 @@ import controller from './controller.js';
 const view = {
     initPhaseOne () {
         // cache the DOM
-        this.main = document.createElement("main");
-        this.main.classList.add("main");
         this.body = document.body;
         this.header = Header();
         this.body.append(this.header);
-        this.body.append(this.main);
     },
     initPhaseTwo () {
         // setup header
@@ -51,6 +48,10 @@ const view = {
         this.headerNav.appendChild(this.headerNavList);
     },
     initPhaseFour (subjectsArr) {
+        this.main = document.createElement("main");
+        this.main.classList.add("main");
+        this.body.append(this.main);
+        
         this.subjectsList = document.createElement("ul");
         this.subjectsList.classList.add("subjects-list");
 
@@ -92,6 +93,12 @@ const view = {
         container.append(this.copyright);
         this.footer.appendChild(container);
         this.body.appendChild(this.footer);
+    }, 
+    renderClickedCard (cardDetailsObj) {
+        console.log("view renderClickedCard cardDetailsObj:", cardDetailsObj);
+    },
+    renderBlogTemplateSubject (subject) {
+        // render the subject in the place of the subjects
     }
 }
 export default view;

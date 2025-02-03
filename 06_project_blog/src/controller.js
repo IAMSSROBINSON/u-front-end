@@ -19,6 +19,17 @@ const controller = {
             view.initPhaseOne();
             view.initPhaseTwo();
             view.initPhaseThree(model.getLinks());
+
+            // phaseFour?
+            console.log("after getCurrentlySelectedPostElementData:", model.getCurrentlySelectedPostElementData());
+            const objTransfer =  model.getCurrentlySelectedPostElementData();
+            if (objTransfer) {
+                view.renderClickedCard(model.getCurrentlySelectedPostElementData());
+                const subject = objTransfer.subject;
+                view.renderBlogTemplateSubject(subject);
+            }
+            
+            
         }
     },
     handlePostEvent (event) {
@@ -31,9 +42,9 @@ const controller = {
             const link = card.firstElementChild;
             console.log("link:", link);
             const id = card?.id;
-            model.setCurrentPostElementId(card);
-            console.log("controller obj:", model.getCurrentlySelectedPostElementData());
-            // window.location.href = link.href;
+            model.setCurrentPostElementId(card); // gets set here
+            console.log("controller obj before:", model.getCurrentlySelectedPostElementData());
+            window.location.href = link.href; // data does not persist due to here, get from storage
     
         }
         

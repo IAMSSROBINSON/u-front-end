@@ -82,4 +82,5 @@ Separate all the components like header and footer so that they can be painted t
   - : when a post is clicked trigger an event in the controller
   - : add event listen to the cards-container trigger at target and stop the event.stopPropogation() thereafter
   - : handle the event through an imported controller function
-  - : change the way the card li is generated, instead of generating it on the component - generate it on the siteData as a key and set to the component through props
+  - : change the way the card id is generated, instead of generating it on the component - generate it on the siteData as a key and set to the component through props
+
