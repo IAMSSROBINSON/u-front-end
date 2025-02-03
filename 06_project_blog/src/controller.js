@@ -7,16 +7,7 @@ const controller = {
         if (window.location.href.includes("index.html")) {
             view.initPhaseOne();
             view.initPhaseTwo();
-            view.initPhaseThree([
-                { 
-                    textValue: "blog",
-                    hrefValue: "index.html"
-                },
-                { 
-                    textValue: "about",
-                    hrefValue: "about.html"
-                },
-            ]);
+            view.initPhaseThree(view.initPhaseThree(model.getLinks()));
             view.initPhaseFour(["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"]);
             view.initPhaseFive("blog");
             view.initPhaseSix(model.getPosts());
@@ -26,6 +17,7 @@ const controller = {
             console.log("window.location.href.includes('blogTemplate'):", window.location.href.includes("blogTemplate"))
             view.initPhaseOne();
             view.initPhaseTwo();
+            view.initPhaseThree(model.getLinks());
         }
     },
     handlePostEvent (event) {

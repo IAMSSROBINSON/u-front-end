@@ -39,6 +39,13 @@ const model = {
     getCurrentlySelectedPostElement () {
         return this.currentlySelectedPostElement;
     },
+    getLinks() {
+        const links = this.data?.links;
+        console.log("links:", links);
+        if (links.length !== 0) {
+            return links;
+        }
+    },
     currentlySelectedPageLink: null,
     currentlySelectedPostElement: null,
     currentlySelectedPostId: null,
