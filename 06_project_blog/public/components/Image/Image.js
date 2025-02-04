@@ -1,4 +1,4 @@
-function Image (imgSrc, altText) {
+function Image (picSrc, imgSrc, altText) {
     const imageContainer = document.createElement("figure");
     imageContainer.classList.add("image-container");
 
@@ -6,7 +6,7 @@ function Image (imgSrc, altText) {
     picture.classList.add("blogTemplate-image");
 
     const source = document.createElement("source");
-    source.srcSet = imgSrc;
+    source.srcSet = picSrc;
     source.type = "image/webp";
 
     const img = document.createElement("img");

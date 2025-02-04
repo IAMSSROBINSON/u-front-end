@@ -1,21 +1,13 @@
 .heading-container {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: var(--margin-medium);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--margin-medium);
 }
 
 .page-heading {
-    font-size: var(--font-size-xxlarge);
+  font-size: var(--font-size-xxlarge);
 }
 
-.postSubject {
-    font-size: var(--font-size-small);
-}
 
-.postHeading {
-    hyphens: auto;
-    line-height: var(--line-height-small);
-    font-size: var(--font-size-xlarge);
-}

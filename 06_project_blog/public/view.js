@@ -129,16 +129,20 @@ const view = {
         postHeading.classList.add("postHeading");
         this.main.appendChild(postHeading);
     },
-    renderBlogTemplateImage (value) {
+    renderBlogTemplateImage (firstImageObj) {
         // value.path
         // value.altText
         // value.caption
-        const img = new Image(value.path, value.altText);
-        console.log("image value", value)
+        const img = new Image(firstImageObj.picSrc, firstImageObj.imgSrc, firstImageObj.altText);
+        console.log("image value", firstImageObj);
         this.main.appendChild(img);
     },
     renderBlogTemplateArticle (value) {
         console.log(value)
+        const article = document.createElement("p");
+        article.textContent = value;
+        article.classList.add("postArticle");
+        this.main.appendChild(article);
     },
     renderBlogTemplateBack (value) {
         console.log(value)
