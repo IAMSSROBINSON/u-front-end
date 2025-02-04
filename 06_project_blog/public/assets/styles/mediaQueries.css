@@ -1,5 +1,5 @@
 @media screen and (max-width: 480px) {
-    ul.header-nav-list {
+    .header-nav-list {
         display: none;
     }
 
@@ -38,28 +38,22 @@
         grid-row: 1/-1;
      }
 
-     .subscribe-input-and-button-container {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        background-color: red;
-     }
-
-     .subscribe-form-email-input {
-        grid-column: 1/2;
-     }
-
-     .footer .subscribe-button {
+     .subscribe-button {
         grid-column: 2/3;
         border-top: 0;
         border-left: 1px solid var(--spacegrey-800);
      }
 
-    .footer .copyright {
+    .copyright {
         order: 1;
     }
 
-    .footer form.subscribe-form {
+    subscribe-form {
         order: 2;
+    }
+
+    .postHeading {
+        font-size: var(--font-size-xxlarge);
     }
 }
 

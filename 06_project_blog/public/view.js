@@ -125,6 +125,9 @@ const view = {
     },
     renderBlogTemplateTitle (value) {
         console.log(value)
+        const postHeading = Heading(value);
+        postHeading.classList.add("postHeading");
+        this.main.appendChild(postHeading);
     },
     renderBlogTemplateImage (value) {
         // value.path

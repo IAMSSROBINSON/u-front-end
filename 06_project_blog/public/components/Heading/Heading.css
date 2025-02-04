@@ -13,3 +13,9 @@
 .postSubject {
     font-size: var(--font-size-small);
 }
+
+.postHeading {
+    hyphens: auto;
+    line-height: var(--line-height-small);
+    font-size: var(--font-size-xlarge);
+}

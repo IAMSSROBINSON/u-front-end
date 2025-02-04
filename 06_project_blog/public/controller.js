@@ -34,7 +34,7 @@ const controller = {
                 view.renderBlogTemplateSubject(objTransfer.subjects[0]);
                 view.renderBlogTemplateDateStamp(objTransfer.dateStamp);
                 view.renderBlogTemplateTitle(objTransfer.title);
-                view.renderBlogTemplateImage(objTransfer.images[0]);
+                // view.renderBlogTemplateImage(objTransfer.images[0]);
                 // view.renderBlogTemplateArticle(objTransfer.article);
                 // view.renderBlogTemplateBack();
          

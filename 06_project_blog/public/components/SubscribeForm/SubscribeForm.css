@@ -5,6 +5,7 @@
     margin-bottom: var(--margin-small);
 }
 
+
 .subscribe-input-and-button-container {
     display: grid;
     grid-template-columns: 1fr;

@@ -1,4 +1,3 @@
-@import './mediaQueries.css';
 @import '../../components/Header/Header.css';
 @import '../../components/Link/Link.css';
 @import '../../components/Logo/Logo.css';
@@ -43,7 +42,8 @@
     --font-size-medium: 1.4rem;
     --font-size-large: 1.6rem;
     --font-size-xlarge: 1.8rem;
-    --font-size-xxlarge: 3.2rem;
+    --font-size-xxlarge: 2.4rem;
+    --font-size-xxxlarge: 3.2rem;
 
     --font-weight-regular: 400;
     --font-weight-bold: 700;
@@ -133,7 +133,8 @@ body {
 
 /* Blog Template Styles */
 .post-information-container {
-    margin-top: 40px;
+    margin-top: var(--margin-xxlarge);
+    margin-bottom: var(--margin-medium);
     display: flex;
 }
 
