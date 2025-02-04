@@ -2,7 +2,7 @@
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: var(--spacegrey-100);
-    padding: var(--padding-large); 
+    padding: var(--padding-large);   
     margin-top: calc(var(--margin-xxlarge) * 2);
     border-radius: var(--border-radius-small);
 }

@@ -4,5 +4,5 @@
     display: flex;
     margin-bottom: var(--margin-large);
     height: min-content;
-    padding: var(--padding-large);
+    /* padding: var(--padding-large); */
 }

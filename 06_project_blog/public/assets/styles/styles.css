@@ -9,6 +9,7 @@
 @import '../../components/Copyright/Copyright.css';
 @import '../../components/SubscribeForm/SubscribeForm.css';
 @import '../../components/Footer/Footer.css';
+@import '../../components/Image/Image.css';
 
 :root {
     font-size: 62.5%;
@@ -111,11 +112,11 @@ img {
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
-    /* padding: var(--padding-large); */
+    padding: var(--padding-large);
     grid-template-columns: minmax(0, auto) minmax(auto, 736px) minmax(0, auto);
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: min-content 1fr auto;
     color: var(--spacegrey-800);
 }
 
@@ -125,9 +126,14 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    padding: var(--padding-large);
     grid-template-columns: subgrid;
     grid-template-rows: min-content min-content 1fr    
 }
 
+
+/* Blog Template Styles */
+.post-information-container {
+    margin-top: 40px;
+    display: flex;
+}
 

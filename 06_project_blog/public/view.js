@@ -1,3 +1,4 @@
+import controller from './controller.js';
 import handlePostEvent from './controller.js';
 import Header from './components/Header/index.js';
 import Logo from './components/Logo/index.js';
@@ -9,7 +10,7 @@ import Card from './components/Card/index.js';
 import Footer from './components/Footer/index.js';
 import Copyright from './components/Copyright/index.js';
 import SubscribeForm from './components/SubscribeForm/index.js';
-import controller from './controller.js';
+import Image from './components/Image/index.js';
 
 
 const view = {
@@ -47,11 +48,12 @@ const view = {
         this.headerNavList.appendChild(documentFragment);
         this.headerNav.appendChild(this.headerNavList);
     },
-    initPhaseFour (subjectsArr) {
+    initPhaseFourA () {
         this.main = document.createElement("main");
         this.main.classList.add("main");
-        this.body.append(this.main);
-        
+        this.body.appendChild(this.main);
+    },
+    initPhaseFour (subjectsArr) {
         this.subjectsList = document.createElement("ul");
         this.subjectsList.classList.add("subjects-list");
 
@@ -63,10 +65,13 @@ const view = {
             documentFragment.appendChild(li);
         });
         this.subjectsList.appendChild(documentFragment);    
-        this.main.appendChild(this.subjectsList);
+        this.main.append(this.subjectsList);
     },
     initPhaseFive (pageHeadingText) {
-        this.headingContainer = Heading(pageHeadingText);
+        this.headingContainer = document.createElement("div");
+        this.headingContainer.classList.add("heading-container");
+        const pageHeading = Heading(pageHeadingText);
+        this.headingContainer.appendChild(pageHeading);
         this.main.appendChild(this.headingContainer);
     },
     initPhaseSix (arrOfPosts) {
@@ -97,8 +102,43 @@ const view = {
     renderClickedCard (cardDetailsObj) {
         console.log("view renderClickedCard cardDetailsObj:", cardDetailsObj);
     },
-    renderBlogTemplateSubject (subject) {
-        // render the subject in the place of the subjects
+    renderBlogTemplateSubject (value) {
+        console.log(value)
+
+        this.postInformationContainer = document.createElement("div");
+        this.postInformationContainer.classList.add("post-information-container");
+
+        const subject = document.createElement("p");
+        subject.classList.add("card-subject");
+        subject.textContent = value;
+
+        this.postInformationContainer.appendChild(subject);
+        this.main.append(this.postInformationContainer);
+    },
+    renderBlogTemplateDateStamp (value) {
+        const dateStamp = document.createElement("p");
+        dateStamp.classList.add("card-dateStamp");
+        dateStamp.textContent = value;
+        console.log(value)
+
+        this.postInformationContainer.appendChild(dateStamp);
+    },
+    renderBlogTemplateTitle (value) {
+        console.log(value)
+    },
+    renderBlogTemplateImage (value) {
+        // value.path
+        // value.altText
+        // value.caption
+        const img = new Image(value.path, value.altText);
+        console.log("image value", value)
+        this.main.appendChild(img);
+    },
+    renderBlogTemplateArticle (value) {
+        console.log(value)
+    },
+    renderBlogTemplateBack (value) {
+        console.log(value)
     }
 }
 export default view;

@@ -1,6 +1,6 @@
 .subjects-list {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 1/2;
     display: flex;
     justify-content: flex-start;
     align-items: center;

@@ -28,9 +28,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },
@@ -42,9 +42,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },
@@ -56,9 +56,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },
@@ -70,9 +70,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },
@@ -84,9 +84,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },
@@ -98,9 +98,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },
@@ -112,9 +112,9 @@ const siteData = {
             dateStamp: "01.01.2025",
             images: [
                 {
-                    path: null,
-                    altText: null,
-                    caption: null
+                    path: "/public/assets/images/plato.jpg",
+                    altText: "Article image.",
+                    caption: "Plato contemplating thought itself"
                 }
             ],
         },

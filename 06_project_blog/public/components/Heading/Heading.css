@@ -9,3 +9,7 @@
 .page-heading {
     font-size: var(--font-size-xxlarge);
 }
+
+.postSubject {
+    font-size: var(--font-size-small);
+}

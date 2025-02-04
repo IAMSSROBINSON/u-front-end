@@ -5,7 +5,7 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
 
     const link = document.createElement("a");
     link.classList.add("card-link");
-    link.setAttribute("href", "/src/blogTemplate.html");
+    link.setAttribute("href", "/public/blogTemplate.html");
 
     const title = document.createElement("h3");
     title.classList.add("card-title");
@@ -35,10 +35,6 @@ function Card (idValue, titleValue, articleValue, subjectValue, dateStampValue) 
     li.appendChild(link);
 
     return li;
-}
-
-function generateRandomId () {
-    return Math.random().toString(32).substring(2);
 }
 
 export default Card;

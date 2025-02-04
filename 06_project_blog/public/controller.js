@@ -8,6 +8,7 @@ const controller = {
             view.initPhaseOne();
             view.initPhaseTwo();
             view.initPhaseThree(view.initPhaseThree(model.getLinks()));
+            view.initPhaseFourA();
             view.initPhaseFour(model.getSubjects());
             view.initPhaseFive("blog");
             view.initPhaseSix(model.getPosts());
@@ -19,14 +20,24 @@ const controller = {
             view.initPhaseOne();
             view.initPhaseTwo();
             view.initPhaseThree(model.getLinks());
+            view.initPhaseFourA();
+            view.initPhaseSeven();
 
             // phaseFour?
             console.log("after getCurrentlySelectedPostElementData:", model.getCurrentlySelectedPostElementData());
             const objTransfer =  model.getCurrentlySelectedPostElementData();
+            console.log("objTransfer title:", objTransfer);
+
             if (objTransfer) {
                 view.renderClickedCard(model.getCurrentlySelectedPostElementData());
-                const subject = objTransfer.subject;
-                view.renderBlogTemplateSubject(subject);
+               
+                view.renderBlogTemplateSubject(objTransfer.subjects[0]);
+                view.renderBlogTemplateDateStamp(objTransfer.dateStamp);
+                view.renderBlogTemplateTitle(objTransfer.title);
+                view.renderBlogTemplateImage(objTransfer.images[0]);
+                // view.renderBlogTemplateArticle(objTransfer.article);
+                // view.renderBlogTemplateBack();
+         
             }
             
             

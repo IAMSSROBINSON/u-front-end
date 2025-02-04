@@ -1,8 +1,4 @@
 @media screen and (max-width: 480px) {
-    body {
-        margin-bottom: var(--padding-large);
-    }
-
     ul.header-nav-list {
         display: none;
     }
@@ -23,18 +19,18 @@
 @media screen and (min-width: 601px) {
     .copyright-and-form-container {
         display: unset;
-        margin: 0 auto;
+        margin: 0px auto;
         max-width: 736px;
         display: grid;
         grid-template-columns: auto 1fr 1fr auto;
         grid-template-rows: 1fr;
     }
 
-    .copyright {
+    .copyright-and-form-container .copyright {
         grid-column: 2/3;
         grid-row: 1/-1;
         align-self: center;
-        margin-top: 0;
+        margin-top: 0px;
     }
 
     .subscribe-form {
