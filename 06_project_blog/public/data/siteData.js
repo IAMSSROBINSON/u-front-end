@@ -1,3 +1,4 @@
+// If any changes are made add +1 to CURRENT_VERSION variable in model.js;
 const siteData = {
     logo: {
         logoType: "iamssrobinson",
@@ -14,7 +15,7 @@ const siteData = {
             hrefValue: "index.html"
         },
     ],
-    subjects: ["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition", "stringtheory"],
+    subjects: ["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition", "physics"],
     posts: [
         {
             "id": generateId(),
