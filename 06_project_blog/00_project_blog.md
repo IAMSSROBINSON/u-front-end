@@ -84,3 +84,6 @@ Separate all the components like header and footer so that they can be painted t
   - : handle the event through an imported controller function
   - : change the way the card id is generated, instead of generating it on the component - generate it on the siteData as a key and set to the component through props
 
+- sort posts
+  - : when a Subject is clicked on from the homepage, iterate over the posts and filter out a list of the posts.subjects that include the value e.g. clicked on 'Philosophy', returns list of all the posts.subjects that contains the word philosophy. Then render this list of Cards in the main container and replace what is there.
+  - : show that the Subject clicked is selected

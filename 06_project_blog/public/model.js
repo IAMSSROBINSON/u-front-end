@@ -1,5 +1,5 @@
 import siteData from './data/siteData.js';
-const CURRENT_VERSION = 1;
+const CURRENT_VERSION = 2;
 
 const model = {
     data: null,
@@ -7,10 +7,12 @@ const model = {
 
         const localData = localStorage.getItem("blogSite");
         const data = localData ? JSON.parse(localData) : null;
-        console.log("init localData:", localData);
+        // console.log("init localData:", localData);
      
         if (!data?.version || data?.version < CURRENT_VERSION) {
+
             this.data = siteData;
+            this.data.version = CURRENT_VERSION;
             localStorage.setItem("blogSite", JSON.stringify(this.data));
             console.log("New Data Source Set To Local Storage:", this.data);
         } else {
