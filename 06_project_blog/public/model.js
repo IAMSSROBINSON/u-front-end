@@ -1,5 +1,5 @@
 import siteData from './data/siteData.js';
-const CURRENT_VERSION = 2;
+const CURRENT_VERSION = 6;
 
 const model = {
     data: null,

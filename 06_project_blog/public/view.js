@@ -161,6 +161,12 @@ const view = {
     },
     renderNoPosts () {
         console.log("view No posts on this subject.");
+        const message = document.createElement("p");
+        message.classList.add("noPosts");
+        message.textContent = "No posts on this subject yet.";
+
+        this.cardsList.innerHTML = "";
+        this.cardsList.appendChild(message);
     }
 }
 export default view;

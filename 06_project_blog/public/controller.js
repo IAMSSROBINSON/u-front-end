@@ -63,18 +63,21 @@ const controller = {
     handleSubjects (event) {
         console.log("Handle Subjects", event);
         console.log("Handle Subjects target", event.target);
-        // get post.subjects
-        console.log("Handle Subjects getSubjects from model:", model. filterSubjects(event.target.textContent));
 
-        const filteredSubjects = model. filterSubjects(event.target.textContent);
+        const target = event.target;
+        const classList = [...target.classList]
+        console.log("subject classList:", classList);
+        console.log("subject classList includes subject-list-item:", classList.includes("subject-list-item"));
+        if (classList.includes("subject-list-item")) {
+            const filteredSubjects = model. filterSubjects(event.target.textContent);
 
-        // if filteredSubjects.length === 0, render a message in main through view UI "no posts on this subject"
-        // else render filteredCards through view
-        if (filteredSubjects.length === 0) {
-            view.renderNoPosts();
-        } else {
-            view.renderFilteredSubjects(filteredSubjects);
+            if (filteredSubjects.length === 0) {
+                view.renderNoPosts();
+            } else {
+                view.renderFilteredSubjects(filteredSubjects);
+            }
         }
+       
     }
   
 }

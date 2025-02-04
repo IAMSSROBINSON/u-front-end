@@ -14,7 +14,7 @@ const siteData = {
             hrefValue: "index.html"
         },
     ],
-    subjects: ["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition"],
+    subjects: ["all", "philosophy", "programming", "art", "design", "technology", "fitness", "nutrition", "stringtheory"],
     posts: [
         {
             "id": generateId(),

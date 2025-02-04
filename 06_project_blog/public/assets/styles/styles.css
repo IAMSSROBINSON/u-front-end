@@ -160,3 +160,9 @@ body {
   font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.5rem);
   line-height: var(--line-height-large);
 }
+
+/* No Posts */
+.noPosts {
+  height: 40px;
+  width: 100%;
+}
