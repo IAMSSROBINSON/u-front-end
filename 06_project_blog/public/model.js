@@ -16,7 +16,7 @@ const model = {
             localStorage.setItem("blogSite", JSON.stringify(this.data));
             console.log("New Data Source Set To Local Storage:", this.data);
         } else {
-            this.data = JSON.parse(localData);
+            this.data = data;
             console.log("Data Source Loaded", this.data);
         }
     },
