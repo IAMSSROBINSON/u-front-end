@@ -1,4 +1,4 @@
-// If any changes are made add +1 to CURRENT_VERSION variable in model.js;
+// If any changes are made add +1 to CURRENT_VERSION variable in model.js or delete siteBlog from localStorage to see updates
 const siteData = {
     logo: {
         logoType: "iamssrobinson",
@@ -11,7 +11,7 @@ const siteData = {
     },
     links: [
         { 
-            textValue: "Blog",
+            textValue: "blog",
             hrefValue: "index.html"
         },
     ],
