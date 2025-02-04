@@ -96,4 +96,4 @@ Separate all the components like header and footer so that they can be painted t
   - : render newList(arr)
   - : get main container and clear content
   - : generate cards from arr and render on UI
-  
+  - : if there are no posts render a message "No posts for this subject."

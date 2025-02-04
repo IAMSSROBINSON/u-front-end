@@ -56,6 +56,7 @@ const view = {
     initPhaseFour (subjectsArr) {
         this.subjectsList = document.createElement("ul");
         this.subjectsList.classList.add("subjects-list");
+        this.subjectsList.addEventListener("click", (event) => controller.handleSubjects(event));
 
         console.log("initPhaseFour subjectsArr:", subjectsArr);
         const documentFragment = document.createDocumentFragment();
@@ -146,6 +147,20 @@ const view = {
     },
     renderBlogTemplateBack (value) {
         console.log(value)
+    },
+    renderFilteredSubjects (arrOfPosts) {
+        console.log("view renderFilteredSubjects:", arrOfPosts);
+
+        this.cardsList.innerHTML = "";
+        const documentFragment = document.createDocumentFragment();
+        arrOfPosts.forEach((postObj) => {
+            const liCard = Card(postObj.id, postObj.title, postObj.article, postObj.subjects[0], postObj.dateStamp);
+            documentFragment.append(liCard);
+        });
+       this.cardsList.append(documentFragment);
+    },
+    renderNoPosts () {
+        console.log("view No posts on this subject.");
     }
 }
 export default view;

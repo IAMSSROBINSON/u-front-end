@@ -55,6 +55,9 @@ const model = {
             return subjects;
         }
     },  
- 
+    filterSubjects (subjectText) {
+        console.log("filterSubjects:", this.data.posts);
+        return this.data.posts.filter(posts => posts.subjects.includes(subjectText));
+    }
 }
 export default model;
