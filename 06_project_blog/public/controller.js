@@ -69,12 +69,14 @@ const controller = {
         console.log("subject classList:", classList);
         console.log("subject classList includes subject-list-item:", classList.includes("subject-list-item"));
         if (classList.includes("subject-list-item")) {
-            const filteredSubjects = model. filterSubjects(event.target.textContent);
+            const textContent = target.textContent;
+            const filteredSubjects = model. filterSubjects(textContent);
 
             if (filteredSubjects.length === 0) {
                 view.renderNoPosts();
             } else {
                 view.renderFilteredSubjects(filteredSubjects);
+                view.renderSelectSubject(textContent);
             }
         }
        

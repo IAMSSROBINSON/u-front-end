@@ -67,6 +67,7 @@ const view = {
         });
         this.subjectsList.appendChild(documentFragment);    
         this.main.append(this.subjectsList);
+        this.renderSelectSubject("all");
     },
     initPhaseFive (pageHeadingText) {
         this.headingContainer = document.createElement("div");
@@ -167,6 +168,18 @@ const view = {
 
         this.cardsList.innerHTML = "";
         this.cardsList.appendChild(message);
+    },
+    renderSelectSubject (textContentValue) {
+        console.log("renderSelectSubject textContent:", textContentValue);
+
+        const listItems = [...document.querySelectorAll(".subject-list-item")];
+        listItems.forEach((item) => {
+            if (item.textContent === textContentValue) {
+                item.classList.add("selected");
+            } else {
+                item.classList.remove("selected");
+            }
+        });
     }
 }
 export default view;

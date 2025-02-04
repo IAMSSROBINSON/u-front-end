@@ -27,7 +27,9 @@
   --spacegrey-100: #f8f9fa;
 
   /* Accent color */
-  --accent-hue: 61;
+  --accent-: hsl(48, 100%, 70%);
+  --accent-: hsl(49, 100%, 80%);
+  --accent-hue: 49;
   --accent-saturation: 100%;
   --accent-lightness: 80%;
   --accent-lightness-hover: 85%;
@@ -165,4 +167,5 @@ body {
 .noPosts {
   height: 40px;
   width: 100%;
+  font-size: var(--font-size-medium);
 }
