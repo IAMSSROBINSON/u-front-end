@@ -86,4 +86,14 @@ Separate all the components like header and footer so that they can be painted t
 
 - sort posts
   - : when a Subject is clicked on from the homepage, iterate over the posts and filter out a list of the posts.subjects that include the value e.g. clicked on 'Philosophy', returns list of all the posts.subjects that contains the word philosophy. Then render this list of Cards in the main container and replace what is there.
-  - : show that the Subject clicked is selected
+  - : add event listener to the parent of all of the subjects
+  - : subject is clicked : "philosophy"
+  - : catch the trigger on the target
+  - : add selected class to target, remove selected class from all other subjects (set css for .selected)
+  - : get the textContent of the target
+  - : get all posts
+  - : filter posts.subjects that include textContent, returns array
+  - : render newList(arr)
+  - : get main container and clear content
+  - : generate cards from arr and render on UI
+  
