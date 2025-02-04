@@ -1,19 +1,21 @@
 import siteData from './data/siteData.js';
+const CURRENT_VERSION = 1;
 
 const model = {
     data: null,
     init : function () {
+
         const localData = localStorage.getItem("blogSite");
-        if (localData) {
-            console.log("You have local data!");
-            this.data = JSON.parse(localData);
-            console.log("localData:", this.data);
-        } else {
-            console.log("You had no local data.");
-            this.data = Object.assign({}, siteData, {currentlySelectedPageLink: null, currentlySelectedPostId: null,  currentURL: null, isSubscribed: false});
-            
+        const data = localData ? JSON.parse(localData) : null;
+        console.log("init localData:", localData);
+     
+        if (!data?.version || data?.version < CURRENT_VERSION) {
+            this.data = siteData;
             localStorage.setItem("blogSite", JSON.stringify(this.data));
-            console.log("blogSite now set locally!");
+            console.log("New Data Source Set To Local Storage:", this.data);
+        } else {
+            this.data = JSON.parse(localData);
+            console.log("Data Source Loaded", this.data);
         }
     },
     getData () {

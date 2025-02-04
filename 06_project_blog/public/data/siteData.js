@@ -1,4 +1,5 @@
 const siteData = {
+    version: 1,
     logo: {
         logoType: "iamssrobinson",
         url: "index.html",
@@ -121,7 +122,11 @@ const siteData = {
                 }
             ]
         },
-    ]
+    ],
+    currentlySelectedPageLink: null, 
+    currentlySelectedPostId: null,  
+    currentURL: null, 
+    isSubscribed: false
 };
 
 function generateId () {
