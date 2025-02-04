@@ -1,36 +1,35 @@
 .subjects-list {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: auto;
-    text-overflow: hidden;
-    gap: var(--gap-medium);
-    padding: var(--padding-small) 1px;
-    /* margin-top: var(--margin-large); */
-    margin-bottom: var(--margin-large);
-    
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  text-overflow: hidden;
+  gap: var(--gap-medium);
+  padding: var(--padding-small) 1px;
+  margin-bottom: var(--margin-large);
 }
 
 .subjects-list::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 li.subject-list-item {
-    list-style: none;
-    padding: var(--padding-small) var(--padding-medium);
-    border-radius: var(--border-radius-xxlarge);
-    cursor: pointer;
-    background-color: var(--accent-500);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-size-medium);
+  list-style: none;
+  padding: var(--padding-small) var(--padding-medium);
+  border-radius: var(--border-radius-xxlarge);
+  cursor: pointer;
+  background-color: var(--accent-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-medium);
 }
 
-.selected, li.subject-list-item:hover {
-    outline: 1px solid var(--spacegrey-800);
-    font-weight: var(--font-weight-bold);
-    background-color: var(--accent-color-hover);
+.selected,
+li.subject-list-item:hover {
+  outline: 1px solid var(--spacegrey-800);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--accent-color-hover);
 }

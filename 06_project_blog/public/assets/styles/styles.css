@@ -29,9 +29,11 @@
   /* Accent color */
   --accent-: hsl(48, 100%, 70%);
   --accent-: hsl(49, 100%, 80%);
-  --accent-hue: 49;
+  --accent-: hsl(49, 100%, 87%);
+  --accent-: hsl(50, 100%, 93%);
+  --accent-hue: 50;
   --accent-saturation: 100%;
-  --accent-lightness: 80%;
+  --accent-lightness: 93%;
   --accent-lightness-hover: 85%;
 
   --accent-500: hsl(
@@ -128,6 +130,8 @@ body {
   grid-template-columns: minmax(0, auto) minmax(auto, 736px) minmax(0, auto);
   grid-template-rows: min-content 1fr auto;
   color: var(--spacegrey-800);
+
+  --footer-offset: var(--padding-large);
 }
 
 .main {

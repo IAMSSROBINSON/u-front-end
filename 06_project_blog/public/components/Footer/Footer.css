@@ -1,8 +1,10 @@
 .footer {
-    grid-column: 2/3;
+    grid-column: 1/-1;
     grid-row: 3/4;
     background-color: var(--spacegrey-100);
     padding: var(--padding-large);   
     margin-top: calc(var(--margin-xxlarge) * 2);
     border-radius: var(--border-radius-small);
+    margin-left: calc(var(--footer-offset) * -1);
+    margin-right: calc(var(--footer-offset) * -1);
 }
