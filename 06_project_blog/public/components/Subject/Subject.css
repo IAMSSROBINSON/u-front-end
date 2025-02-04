@@ -31,5 +31,5 @@ li.subject-list-item {
 li.subject-list-item:hover {
   outline: 1px solid var(--spacegrey-800);
   font-weight: var(--font-weight-bold);
-  background-color: var(--accent-color-hover);
+  background-color: var(--accent-color-hover) !important;
 }
