@@ -1,5 +1,4 @@
 const siteData = {
-    version: 1,
     logo: {
         logoType: "iamssrobinson",
         url: "index.html",
