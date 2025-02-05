@@ -1,0 +1,9 @@
+.menu-icon-container {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 32px;
+}

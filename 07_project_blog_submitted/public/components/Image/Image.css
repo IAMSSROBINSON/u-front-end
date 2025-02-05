@@ -1,0 +1,19 @@
+.image-container {
+  border-radius: var(--border-radius-xsmall);
+  overflow: hidden;
+  margin-top: var(--margin-small);
+  margin-bottom: var(--margin-large);
+  display: flex;
+  flex-direction: column;
+}
+
+.blogTemplate-image {
+  object-fit: cover;
+  background-color: yellow;
+}
+
+.image-caption {
+  margin-top: var(--margin-small);
+  text-align: center;
+  font-size: var(--font-size-xsmall);
+}

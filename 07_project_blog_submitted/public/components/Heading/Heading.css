@@ -1,0 +1,11 @@
+.heading-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--margin-medium);
+}
+
+.page-heading {
+  font-size: var(--font-size-xxlarge);
+}
