@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="button">
+        End Timeout
+    </button>
+    
+    <script>
+
+        const button = document.querySelector("#button");
+        
+        let isRan = false;
+
+        let endTimeout = setTimeout(function log() {
+            isRan = true;
+            console.log("Log this sentence after 2 seconds if the button is not clicked first");
+        }, 2000);
+
+        button.addEventListener("click", () => {
+            if (!isRan) {
+                clearTimeout(endTimeout);
+            console.log("The timeout was stopped with this clicker");
+            }
+        })
+
+
+    </script>
+
+</body>
+</html>
